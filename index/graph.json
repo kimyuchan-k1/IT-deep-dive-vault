@@ -1,0 +1,97 @@
+{
+  "nodes": [
+    {
+      "id": "redis-bigkey",
+      "title": "Redis BigKey가 클러스터 전체를 마비시키는 이유",
+      "category": "redis",
+      "published": true,
+      "day": 1
+    },
+    {
+      "id": "btree-index-internals",
+      "title": "B+Tree는 왜 이진 트리가 아니라 수백 갈래로 갈라지나",
+      "category": "db",
+      "published": true,
+      "day": 2
+    },
+    {
+      "id": "redis-hotkey",
+      "title": "redis-hotkey",
+      "category": "?",
+      "published": false,
+      "day": null
+    },
+    {
+      "id": "redis-cluster-slot",
+      "title": "redis-cluster-slot",
+      "category": "?",
+      "published": false,
+      "day": null
+    },
+    {
+      "id": "lazy-freeing",
+      "title": "lazy-freeing",
+      "category": "?",
+      "published": false,
+      "day": null
+    },
+    {
+      "id": "index-skip-scan-covering",
+      "title": "index-skip-scan-covering",
+      "category": "?",
+      "published": false,
+      "day": null
+    },
+    {
+      "id": "lsm-tree-rocksdb",
+      "title": "lsm-tree-rocksdb",
+      "category": "?",
+      "published": false,
+      "day": null
+    },
+    {
+      "id": "hash-merge-nested-loop-join",
+      "title": "hash-merge-nested-loop-join",
+      "category": "?",
+      "published": false,
+      "day": null
+    },
+    {
+      "id": "mvcc-how",
+      "title": "mvcc-how",
+      "category": "?",
+      "published": false,
+      "day": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "redis-bigkey",
+      "target": "redis-hotkey"
+    },
+    {
+      "source": "redis-bigkey",
+      "target": "redis-cluster-slot"
+    },
+    {
+      "source": "redis-bigkey",
+      "target": "lazy-freeing"
+    },
+    {
+      "source": "btree-index-internals",
+      "target": "index-skip-scan-covering"
+    },
+    {
+      "source": "btree-index-internals",
+      "target": "lsm-tree-rocksdb"
+    },
+    {
+      "source": "btree-index-internals",
+      "target": "hash-merge-nested-loop-join"
+    },
+    {
+      "source": "btree-index-internals",
+      "target": "mvcc-how"
+    }
+  ]
+}
