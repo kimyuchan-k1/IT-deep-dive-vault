@@ -1,97 +1,93 @@
 {
   "nodes": [
     {
-      "id": "redis-bigkey",
+      "slug": "redis-bigkey",
       "title": "Redis BigKey가 클러스터 전체를 마비시키는 이유",
       "category": "redis",
-      "published": true,
-      "day": 1
+      "date": "2026-06-01",
+      "day": 1,
+      "tags": [
+        "cache",
+        "performance",
+        "distributed",
+        "redis-cluster"
+      ],
+      "difficulty": 3
     },
     {
-      "id": "btree-index-internals",
+      "slug": "btree-index-internals",
       "title": "B+Tree는 왜 이진 트리가 아니라 수백 갈래로 갈라지나",
       "category": "db",
-      "published": true,
-      "day": 2
+      "date": "2026-06-02",
+      "day": 2,
+      "tags": [
+        "database",
+        "index",
+        "b-tree",
+        "disk-io",
+        "query-performance"
+      ],
+      "difficulty": 3
     },
     {
-      "id": "redis-hotkey",
-      "title": "redis-hotkey",
-      "category": "?",
-      "published": false,
-      "day": null
-    },
-    {
-      "id": "redis-cluster-slot",
-      "title": "redis-cluster-slot",
-      "category": "?",
-      "published": false,
-      "day": null
-    },
-    {
-      "id": "lazy-freeing",
-      "title": "lazy-freeing",
-      "category": "?",
-      "published": false,
-      "day": null
-    },
-    {
-      "id": "index-skip-scan-covering",
-      "title": "index-skip-scan-covering",
-      "category": "?",
-      "published": false,
-      "day": null
-    },
-    {
-      "id": "lsm-tree-rocksdb",
-      "title": "lsm-tree-rocksdb",
-      "category": "?",
-      "published": false,
-      "day": null
-    },
-    {
-      "id": "hash-merge-nested-loop-join",
-      "title": "hash-merge-nested-loop-join",
-      "category": "?",
-      "published": false,
-      "day": null
-    },
-    {
-      "id": "mvcc-how",
-      "title": "mvcc-how",
-      "category": "?",
-      "published": false,
-      "day": null
+      "slug": "lamport-vs-vector-clock",
+      "title": "시계를 맞춰도 분산 시스템에선 누가 먼저인지 모른다",
+      "category": "distributed",
+      "date": "2026-06-03",
+      "day": 3,
+      "tags": [
+        "lamport-clock",
+        "vector-clock",
+        "causality",
+        "happened-before"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
     {
-      "source": "redis-bigkey",
-      "target": "redis-hotkey"
+      "from": "redis-bigkey",
+      "to": "cache-stampede"
     },
     {
-      "source": "redis-bigkey",
-      "target": "redis-cluster-slot"
+      "from": "redis-bigkey",
+      "to": "lazy-freeing"
     },
     {
-      "source": "redis-bigkey",
-      "target": "lazy-freeing"
+      "from": "redis-bigkey",
+      "to": "redis-cluster-slot"
     },
     {
-      "source": "btree-index-internals",
-      "target": "index-skip-scan-covering"
+      "from": "redis-bigkey",
+      "to": "redis-hotkey"
     },
     {
-      "source": "btree-index-internals",
-      "target": "lsm-tree-rocksdb"
+      "from": "btree-index-internals",
+      "to": "hash-merge-nested-loop-join"
     },
     {
-      "source": "btree-index-internals",
-      "target": "hash-merge-nested-loop-join"
+      "from": "btree-index-internals",
+      "to": "index-skip-scan-covering"
     },
     {
-      "source": "btree-index-internals",
-      "target": "mvcc-how"
+      "from": "btree-index-internals",
+      "to": "lsm-tree-rocksdb"
+    },
+    {
+      "from": "btree-index-internals",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "lamport-vs-vector-clock",
+      "to": "crdt-intro"
+    },
+    {
+      "from": "lamport-vs-vector-clock",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "lamport-vs-vector-clock",
+      "to": "two-generals"
     }
   ]
 }

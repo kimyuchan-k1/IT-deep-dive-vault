@@ -19,7 +19,7 @@
 | crdt-intro | CRDT — 동시 편집을 가능하게 하는 자료구조 | 4 | pending |
 | saga-vs-2pc | Saga 패턴 vs 2PC | 3 | pending |
 | local-first-software | Local-First Software 아키텍처 | 4 | pending |
-| lamport-vs-vector-clock | Lamport Clock vs Vector Clock | 4 | pending |
+| lamport-vs-vector-clock | Lamport Clock vs Vector Clock | 4 | **done (Day 3)** |
 | quorum-rw-n | Quorum 합의 (R + W > N) | 3 | pending |
 | eventual-vs-strong-consistency | Eventual vs Strong Consistency 비용 | 3 | pending |
 | read-your-writes | Read-your-writes / Monotonic Read | 3 | pending |
@@ -151,7 +151,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: 0 / 15
+- A. 분산 시스템 이론: **1 / 15**
 - B. Redis / 캐시: **1 / 14**
 - C. 메시지 큐: 0 / 12
 - D. 데이터베이스 내부: **1 / 15**
