@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian (워크스페이스 상태는 사람별이라 제외)
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# 시크릿
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+
+# 인덱스는 vault에서 재빌드 가능하지만, 백업 차원에서 포함시킬 수도 있음
+# 일단 포함하고, 너무 커지면 .gitignore에 추가
+# index/embeddings.sqlite
+# index/graph.json
+
+# 사이트 빌드 산출물 (GitHub Actions가 빌드)
+site/_build/
+site/.cache/
+
+# 임시
+*.tmp
+*.bak
+*.swp
