@@ -30,6 +30,21 @@
       "difficulty": 3
     },
     {
+      "slug": "kafka-exactly-once",
+      "title": "Kafka Exactly-Once는 \"정확히 한 번 전송\"이 아니다",
+      "category": "kafka",
+      "date": "2026-06-03",
+      "day": 4,
+      "tags": [
+        "kafka",
+        "exactly-once",
+        "idempotent-producer",
+        "transactions",
+        "eos"
+      ],
+      "difficulty": 4
+    },
+    {
       "slug": "lamport-vs-vector-clock",
       "title": "시계를 맞춰도 분산 시스템에선 누가 먼저인지 모른다",
       "category": "distributed",
@@ -76,6 +91,26 @@
     {
       "from": "btree-index-internals",
       "to": "mvcc-how"
+    },
+    {
+      "from": "kafka-exactly-once",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "kafka-exactly-once",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "kafka-exactly-once",
+      "to": "kafka-partition-math"
+    },
+    {
+      "from": "kafka-exactly-once",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "kafka-exactly-once",
+      "to": "saga-vs-2pc"
     },
     {
       "from": "lamport-vs-vector-clock",
