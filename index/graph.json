@@ -57,6 +57,21 @@
         "happened-before"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "innodb-buffer-pool",
+      "title": "버퍼풀을 메모리 80%로 키웠더니 DB가 더 느려졌다",
+      "category": "db",
+      "date": "2026-06-04",
+      "day": 5,
+      "tags": [
+        "mysql",
+        "innodb",
+        "buffer-pool",
+        "memory-tuning",
+        "lru"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -123,6 +138,22 @@
     {
       "from": "lamport-vs-vector-clock",
       "to": "two-generals"
+    },
+    {
+      "from": "innodb-buffer-pool",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "innodb-buffer-pool",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "innodb-buffer-pool",
+      "to": "lsm-tree-rocksdb"
+    },
+    {
+      "from": "innodb-buffer-pool",
+      "to": "mvcc-how"
     }
   ]
 }
