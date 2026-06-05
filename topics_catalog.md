@@ -110,7 +110,7 @@
 | liveness-readiness-startup | Liveness/Readiness/Startup Probe | 2 | pending |
 | hpa-internals | HPA의 진짜 동작 | 3 | pending |
 | service-mesh-istio | Service Mesh가 풀어주는 것 | 3 | pending |
-| sidecar-tradeoff | Sidecar 패턴 트레이드오프 | 3 | pending |
+| sidecar-tradeoff | Sidecar 패턴 트레이드오프 | 3 | **done (Day 6)** |
 | aws-vpc-design | AWS VPC 디자인 — AZ 분리 | 3 | pending |
 | spot-instance-safe | Spot Instance 안전하게 쓰는 법 | 3 | pending |
 | s3-consistency-evolution | S3 일관성 모델 변천사 | 3 | pending |
@@ -156,7 +156,7 @@
 - C. 메시지 큐: **1 / 12**
 - D. 데이터베이스 내부: **2 / 15**
 - E. 네트워크: 0 / 10
-- F. 클라우드: 0 / 12
+- F. 클라우드: **1 / 12**
 - G. 관측성: 0 / 10
 - H. 보안: 0 / 8
 

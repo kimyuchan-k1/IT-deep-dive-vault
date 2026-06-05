@@ -72,6 +72,21 @@
         "lru"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "sidecar-tradeoff",
+      "title": "사이드카를 붙였더니 앱은 그대로인데 p99가 3배 튀었다",
+      "category": "cloud",
+      "date": "2026-06-05",
+      "day": 6,
+      "tags": [
+        "kubernetes",
+        "sidecar",
+        "service-mesh",
+        "envoy",
+        "latency"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -154,6 +169,26 @@
     {
       "from": "innodb-buffer-pool",
       "to": "mvcc-how"
+    },
+    {
+      "from": "sidecar-tradeoff",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "sidecar-tradeoff",
+      "to": "distributed-tracing-otel"
+    },
+    {
+      "from": "sidecar-tradeoff",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "sidecar-tradeoff",
+      "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "sidecar-tradeoff",
+      "to": "service-mesh-istio"
     }
   ]
 }
