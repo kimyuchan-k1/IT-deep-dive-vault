@@ -62,7 +62,7 @@
 | backpressure-patterns | Backpressure 4가지 패턴 | 4 | pending |
 | event-sourcing-intro | Event Sourcing 입문 | 3 | pending |
 | cqrs-when-needed | CQRS는 언제 진짜 필요한가 | 3 | pending |
-| saga-orchestrator-vs-choreography | Saga Orchestrator vs Choreography | 3 | pending |
+| saga-orchestrator-vs-choreography | Saga Orchestrator vs Choreography | 3 | **done (Day 7)** |
 | kafka-connect-schema-registry | Kafka Connect / Schema Registry | 3 | pending |
 | sqs-vs-sns-vs-eventbridge | SQS vs SNS vs EventBridge | 2 | pending |
 | pull-vs-push-model | Pull vs Push 모델 | 2 | pending |
@@ -153,7 +153,7 @@
 
 - A. 분산 시스템 이론: **1 / 15**
 - B. Redis / 캐시: **1 / 14**
-- C. 메시지 큐: **1 / 12**
+- C. 메시지 큐: **2 / 12**
 - D. 데이터베이스 내부: **2 / 15**
 - E. 네트워크: 0 / 10
 - F. 클라우드: **1 / 12**
