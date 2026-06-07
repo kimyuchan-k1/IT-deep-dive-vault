@@ -143,7 +143,7 @@
 | mtls-zero-trust | mTLS와 zero-trust | 3 | pending |
 | rate-limit-token-bucket | Rate Limiting (Token vs Leaky Bucket) | 3 | pending |
 | sqli-prepared-stmt | SQL Injection — Prepared Statement 한계 | 3 | pending |
-| csrf-samesite | CSRF와 SameSite 쿠키 | 2 | pending |
+| csrf-samesite | CSRF와 SameSite 쿠키 | 2 | **done (Day 8)** |
 | secret-management | Secret 관리 (Vault vs SSM) | 2 | pending |
 | rbac-abac-rebac | RBAC vs ABAC vs ReBAC | 3 | pending |
 
@@ -158,6 +158,6 @@
 - E. 네트워크: 0 / 10
 - F. 클라우드: **1 / 12**
 - G. 관측성: 0 / 10
-- H. 보안: 0 / 8
+- H. 보안: **1 / 8**
 
 **총 94개. 약 3개월치.**

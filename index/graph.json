@@ -102,6 +102,21 @@
         "distributed-transaction"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "csrf-samesite",
+      "title": "SameSite=Lax가 기본값이 됐는데 왜 아직도 CSRF 토큰을 쓰나",
+      "category": "security",
+      "date": "2026-06-07",
+      "day": 8,
+      "tags": [
+        "csrf",
+        "samesite",
+        "cookie",
+        "web-security",
+        "session"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -224,6 +239,26 @@
     {
       "from": "saga-orchestrator-vs-choreography",
       "to": "saga-vs-2pc"
+    },
+    {
+      "from": "csrf-samesite",
+      "to": "http-idempotency"
+    },
+    {
+      "from": "csrf-samesite",
+      "to": "jwt-vs-session"
+    },
+    {
+      "from": "csrf-samesite",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "csrf-samesite",
+      "to": "oauth2-grant-types"
+    },
+    {
+      "from": "csrf-samesite",
+      "to": "reverse-proxy-l4-l7"
     }
   ]
 }
