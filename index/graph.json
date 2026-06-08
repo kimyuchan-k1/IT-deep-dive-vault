@@ -117,6 +117,21 @@
         "session"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "materialized-view",
+      "title": "대시보드를 Materialized View로 바꿨더니 빨라졌는데 숫자가 어제 것이었다",
+      "category": "db",
+      "date": "2026-06-08",
+      "day": 9,
+      "tags": [
+        "postgresql",
+        "materialized-view",
+        "cache",
+        "refresh",
+        "locking"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -259,6 +274,30 @@
     {
       "from": "csrf-samesite",
       "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "materialized-view",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "materialized-view",
+      "to": "cache-aside-vs-write-through"
+    },
+    {
+      "from": "materialized-view",
+      "to": "cdc-debezium"
+    },
+    {
+      "from": "materialized-view",
+      "to": "innodb-buffer-pool"
+    },
+    {
+      "from": "materialized-view",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "materialized-view",
+      "to": "replication-lag"
     }
   ]
 }

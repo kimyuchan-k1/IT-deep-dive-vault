@@ -84,7 +84,7 @@
 | replication-lag | Read Replica replication lag 다루기 | 3 | pending |
 | sharding-strategies | Sharding 전략 (Range/Hash/Directory) | 3 | pending |
 | upsert-idempotency | UPSERT 패턴과 멱등성 | 2 | pending |
-| materialized-view | Materialized View vs 캐시 테이블 | 2 | pending |
+| materialized-view | Materialized View vs 캐시 테이블 | 2 | **done (Day 9)** |
 | hyperloglog-approx-counting | 어림 카운팅 (HyperLogLog) | 3 | pending |
 
 ## E. 네트워크 / 프로토콜
@@ -154,7 +154,7 @@
 - A. 분산 시스템 이론: **1 / 15**
 - B. Redis / 캐시: **1 / 14**
 - C. 메시지 큐: **2 / 12**
-- D. 데이터베이스 내부: **2 / 15**
+- D. 데이터베이스 내부: **3 / 15**
 - E. 네트워크: 0 / 10
 - F. 클라우드: **1 / 12**
 - G. 관측성: 0 / 10
