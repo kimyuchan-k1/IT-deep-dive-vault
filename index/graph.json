@@ -132,6 +132,22 @@
         "locking"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "blue-green-canary-rolling",
+      "title": "롤링 배포로 깔끔하게 무중단 했는데, 롤백은 또 한 번의 배포였다",
+      "category": "cloud",
+      "date": "2026-06-09",
+      "day": 10,
+      "tags": [
+        "deployment",
+        "blue-green",
+        "canary",
+        "rolling",
+        "rollback",
+        "kubernetes"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -298,6 +314,30 @@
     {
       "from": "materialized-view",
       "to": "replication-lag"
+    },
+    {
+      "from": "blue-green-canary-rolling",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "blue-green-canary-rolling",
+      "to": "error-budget"
+    },
+    {
+      "from": "blue-green-canary-rolling",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "blue-green-canary-rolling",
+      "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "blue-green-canary-rolling",
+      "to": "replication-lag"
+    },
+    {
+      "from": "blue-green-canary-rolling",
+      "to": "sidecar-tradeoff"
     }
   ]
 }

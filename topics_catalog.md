@@ -117,7 +117,7 @@
 | observability-stack | CloudWatch vs Datadog vs Grafana | 2 | pending |
 | helm-vs-kustomize | Helm 차트 vs Kustomize | 2 | pending |
 | terraform-state | Terraform State 백업과 잠금 | 3 | pending |
-| blue-green-canary-rolling | Blue/Green vs Canary vs Rolling | 2 | pending |
+| blue-green-canary-rolling | Blue/Green vs Canary vs Rolling | 2 | **done (Day 10)** |
 
 ## G. 관측성 / 안정성
 
@@ -156,7 +156,7 @@
 - C. 메시지 큐: **2 / 12**
 - D. 데이터베이스 내부: **3 / 15**
 - E. 네트워크: 0 / 10
-- F. 클라우드: **1 / 12**
+- F. 클라우드: **2 / 12**
 - G. 관측성: 0 / 10
 - H. 보안: **1 / 8**
 
