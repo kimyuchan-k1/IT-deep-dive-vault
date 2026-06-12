@@ -148,6 +148,22 @@
         "kubernetes"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "cdc-debezium",
+      "title": "변경분을 잡으려 5초마다 SELECT를 돌렸는데, CDC는 이미 끝난 트랜잭션 로그를 읽고 있었다",
+      "category": "distributed",
+      "date": "2026-06-12",
+      "day": 11,
+      "tags": [
+        "cdc",
+        "debezium",
+        "binlog",
+        "wal",
+        "kafka",
+        "replication"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -338,6 +354,30 @@
     {
       "from": "blue-green-canary-rolling",
       "to": "sidecar-tradeoff"
+    },
+    {
+      "from": "cdc-debezium",
+      "to": "cqrs-when-needed"
+    },
+    {
+      "from": "cdc-debezium",
+      "to": "event-sourcing-intro"
+    },
+    {
+      "from": "cdc-debezium",
+      "to": "kafka-connect-schema-registry"
+    },
+    {
+      "from": "cdc-debezium",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "cdc-debezium",
+      "to": "replication-lag"
+    },
+    {
+      "from": "cdc-debezium",
+      "to": "wal-pitr"
     }
   ]
 }

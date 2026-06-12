@@ -29,7 +29,7 @@
 | raft-easier-than-paxos | Raft가 Paxos보다 쉬운 이유 | 4 | pending |
 | idempotency-key | Idempotency Key 설계 | 2 | pending |
 | outbox-pattern | 분산 트랜잭션 — Outbox 패턴 | 3 | pending |
-| cdc-debezium | CDC와 Debezium | 3 | pending |
+| cdc-debezium | CDC와 Debezium | 3 | **done (Day 11)** |
 
 ## B. Redis / 캐시
 
@@ -151,7 +151,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **1 / 15**
+- A. 분산 시스템 이론: **2 / 15**
 - B. Redis / 캐시: **1 / 14**
 - C. 메시지 큐: **2 / 12**
 - D. 데이터베이스 내부: **3 / 15**
