@@ -164,6 +164,22 @@
         "replication"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "rbac-abac-rebac",
+      "title": "역할을 100개 만들어 권한을 다 막았는데, \"이 폴더를 공유받은 사람의 팀장\"은 역할로 그릴 수 없었다",
+      "category": "security",
+      "date": "2026-06-14",
+      "day": 12,
+      "tags": [
+        "authorization",
+        "rbac",
+        "abac",
+        "rebac",
+        "zanzibar",
+        "access-control"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -378,6 +394,26 @@
     {
       "from": "cdc-debezium",
       "to": "wal-pitr"
+    },
+    {
+      "from": "rbac-abac-rebac",
+      "to": "jwt-vs-session"
+    },
+    {
+      "from": "rbac-abac-rebac",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "rbac-abac-rebac",
+      "to": "oauth2-grant-types"
+    },
+    {
+      "from": "rbac-abac-rebac",
+      "to": "rate-limit-token-bucket"
+    },
+    {
+      "from": "rbac-abac-rebac",
+      "to": "secret-management"
     }
   ]
 }
