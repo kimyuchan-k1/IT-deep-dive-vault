@@ -180,6 +180,22 @@
         "access-control"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "local-first-software",
+      "title": "오프라인에서도 되게 만들었더니, 두 사람이 같이 고친 글에서 한쪽 수정이 조용히 사라졌다",
+      "category": "distributed",
+      "date": "2026-06-15",
+      "day": 13,
+      "tags": [
+        "local-first",
+        "crdt",
+        "offline-first",
+        "sync",
+        "automerge",
+        "yjs"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -414,6 +430,26 @@
     {
       "from": "rbac-abac-rebac",
       "to": "secret-management"
+    },
+    {
+      "from": "local-first-software",
+      "to": "crdt-intro"
+    },
+    {
+      "from": "local-first-software",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "local-first-software",
+      "to": "lamport-vs-vector-clock"
+    },
+    {
+      "from": "local-first-software",
+      "to": "read-your-writes"
+    },
+    {
+      "from": "local-first-software",
+      "to": "saga-vs-2pc"
     }
   ]
 }
