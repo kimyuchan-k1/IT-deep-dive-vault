@@ -196,6 +196,22 @@
         "yjs"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "dns-cache-ttl",
+      "title": "DNS 레코드를 바꾸고 TTL 60초를 기다렸는데, 트래픽은 한 시간째 옛 서버로 갔다",
+      "category": "network",
+      "date": "2026-06-16",
+      "day": 14,
+      "tags": [
+        "dns",
+        "ttl",
+        "caching",
+        "resolver",
+        "jvm",
+        "failover"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -450,6 +466,30 @@
     {
       "from": "local-first-software",
       "to": "saga-vs-2pc"
+    },
+    {
+      "from": "dns-cache-ttl",
+      "to": "blue-green-canary-rolling"
+    },
+    {
+      "from": "dns-cache-ttl",
+      "to": "cdn-cache-key"
+    },
+    {
+      "from": "dns-cache-ttl",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "dns-cache-ttl",
+      "to": "http2-vs-http3"
+    },
+    {
+      "from": "dns-cache-ttl",
+      "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "dns-cache-ttl",
+      "to": "tls13-zero-rtt"
     }
   ]
 }

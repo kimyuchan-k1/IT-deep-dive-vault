@@ -95,7 +95,7 @@
 | http2-vs-http3 | HTTP/2 vs HTTP/3 (QUIC) | 3 | pending |
 | websocket-vs-sse-vs-polling | WebSocket vs SSE vs Long Polling | 2 | pending |
 | tls13-zero-rtt | TLS 1.3 handshake 0-RTT | 4 | pending |
-| dns-cache-ttl | DNS 캐시와 TTL 튜닝 | 2 | pending |
+| dns-cache-ttl | DNS 캐시와 TTL 튜닝 | 2 | **done (Day 14)** |
 | grpc-vs-rest | gRPC가 REST보다 빠른 진짜 이유 | 2 | pending |
 | cdn-cache-key | CDN 캐시 키 설계 | 3 | pending |
 | reverse-proxy-l4-l7 | Reverse Proxy와 L4/L7 LB | 2 | pending |
@@ -155,7 +155,7 @@
 - B. Redis / 캐시: **1 / 14**
 - C. 메시지 큐: **2 / 12**
 - D. 데이터베이스 내부: **3 / 15**
-- E. 네트워크: 0 / 10
+- E. 네트워크: **1 / 10**
 - F. 클라우드: **2 / 12**
 - G. 관측성: 0 / 10
 - H. 보안: **2 / 8**
