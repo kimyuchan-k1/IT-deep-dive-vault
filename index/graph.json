@@ -212,6 +212,22 @@
         "failover"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "liveness-readiness-startup",
+      "title": "Liveness 프로브를 꼼꼼히 걸었더니, 멀쩡한 파드가 줄줄이 재시작되며 장애가 번졌다",
+      "category": "cloud",
+      "date": "2026-06-17",
+      "day": 15,
+      "tags": [
+        "kubernetes",
+        "probe",
+        "liveness",
+        "readiness",
+        "startup",
+        "resilience"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -490,6 +506,30 @@
     {
       "from": "dns-cache-ttl",
       "to": "tls13-zero-rtt"
+    },
+    {
+      "from": "liveness-readiness-startup",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "liveness-readiness-startup",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "liveness-readiness-startup",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "liveness-readiness-startup",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "liveness-readiness-startup",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "liveness-readiness-startup",
+      "to": "sidecar-tradeoff"
     }
   ]
 }
