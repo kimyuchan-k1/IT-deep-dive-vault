@@ -138,7 +138,7 @@
 
 | slug | 제목 | difficulty | status |
 |---|---|---|---|
-| oauth2-grant-types | OAuth2 4가지 grant type | 3 | pending |
+| oauth2-grant-types | OAuth2 4가지 grant type | 3 | **done (Day 16)** |
 | jwt-vs-session | JWT vs Session 쿠키 | 3 | pending |
 | mtls-zero-trust | mTLS와 zero-trust | 3 | pending |
 | rate-limit-token-bucket | Rate Limiting (Token vs Leaky Bucket) | 3 | pending |
@@ -158,6 +158,6 @@
 - E. 네트워크: **1 / 10**
 - F. 클라우드: **3 / 12**
 - G. 관측성: 0 / 10
-- H. 보안: **2 / 8**
+- H. 보안: **3 / 8**
 
 **총 94개. 약 3개월치.**

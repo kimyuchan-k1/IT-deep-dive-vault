@@ -228,6 +228,22 @@
         "resilience"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "oauth2-grant-types",
+      "title": "SPA엔 client_secret을 숨길 곳이 없어서 Implicit grant를 썼는데, 액세스 토큰이 브라우저 히스토리에 박혀 유출됐다",
+      "category": "security",
+      "date": "2026-06-18",
+      "day": 16,
+      "tags": [
+        "oauth2",
+        "authorization-code",
+        "pkce",
+        "implicit",
+        "client-credentials",
+        "authentication"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -530,6 +546,30 @@
     {
       "from": "liveness-readiness-startup",
       "to": "sidecar-tradeoff"
+    },
+    {
+      "from": "oauth2-grant-types",
+      "to": "csrf-samesite"
+    },
+    {
+      "from": "oauth2-grant-types",
+      "to": "jwt-vs-session"
+    },
+    {
+      "from": "oauth2-grant-types",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "oauth2-grant-types",
+      "to": "rate-limit-token-bucket"
+    },
+    {
+      "from": "oauth2-grant-types",
+      "to": "rbac-abac-rebac"
+    },
+    {
+      "from": "oauth2-grant-types",
+      "to": "secret-management"
     }
   ]
 }
