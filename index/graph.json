@@ -244,6 +244,22 @@
         "authentication"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "sqs-vs-sns-vs-eventbridge",
+      "title": "SNS 하나로 세 소비자에게 직접 팬아웃했는데, 한 소비자가 죽자 그쪽 주문만 조용히 증발했다",
+      "category": "kafka",
+      "date": "2026-06-19",
+      "day": 17,
+      "tags": [
+        "sqs",
+        "sns",
+        "eventbridge",
+        "fan-out",
+        "event-driven",
+        "messaging"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -570,6 +586,30 @@
     {
       "from": "oauth2-grant-types",
       "to": "secret-management"
+    },
+    {
+      "from": "sqs-vs-sns-vs-eventbridge",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "sqs-vs-sns-vs-eventbridge",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "sqs-vs-sns-vs-eventbridge",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "sqs-vs-sns-vs-eventbridge",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "sqs-vs-sns-vs-eventbridge",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "sqs-vs-sns-vs-eventbridge",
+      "to": "pull-vs-push-model"
     }
   ]
 }
