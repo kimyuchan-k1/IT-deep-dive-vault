@@ -108,7 +108,7 @@
 |---|---|---|---|
 | k8s-pod-death-5-reasons | Kubernetes Pod이 죽는 흔한 5가지 이유 | 2 | pending |
 | liveness-readiness-startup | Liveness/Readiness/Startup Probe | 2 | **done (Day 15)** |
-| hpa-internals | HPA의 진짜 동작 | 3 | pending |
+| hpa-internals | HPA의 진짜 동작 | 3 | **done (Day 18)** |
 | service-mesh-istio | Service Mesh가 풀어주는 것 | 3 | pending |
 | sidecar-tradeoff | Sidecar 패턴 트레이드오프 | 3 | **done (Day 6)** |
 | aws-vpc-design | AWS VPC 디자인 — AZ 분리 | 3 | pending |
@@ -156,7 +156,7 @@
 - C. 메시지 큐: **3 / 12**
 - D. 데이터베이스 내부: **3 / 15**
 - E. 네트워크: **1 / 10**
-- F. 클라우드: **3 / 12**
+- F. 클라우드: **4 / 12**
 - G. 관측성: 0 / 10
 - H. 보안: **3 / 8**
 

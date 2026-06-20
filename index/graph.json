@@ -260,6 +260,20 @@
         "messaging"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "hpa-internals",
+      "title": "HPA는 CPU만 보고 즉시 늘려주는 게 아니다",
+      "category": "cloud",
+      "date": "2026-06-20",
+      "day": 18,
+      "tags": [
+        "kubernetes",
+        "hpa",
+        "autoscaling",
+        "metrics-server"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -610,6 +624,26 @@
     {
       "from": "sqs-vs-sns-vs-eventbridge",
       "to": "pull-vs-push-model"
+    },
+    {
+      "from": "hpa-internals",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "hpa-internals",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "hpa-internals",
+      "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "hpa-internals",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "hpa-internals",
+      "to": "retry-exponential-backoff-jitter"
     }
   ]
 }
