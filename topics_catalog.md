@@ -65,7 +65,7 @@
 | saga-orchestrator-vs-choreography | Saga Orchestrator vs Choreography | 3 | **done (Day 7)** |
 | kafka-connect-schema-registry | Kafka Connect / Schema Registry | 3 | pending |
 | sqs-vs-sns-vs-eventbridge | SQS vs SNS vs EventBridge | 2 | **done (Day 17)** |
-| pull-vs-push-model | Pull vs Push 모델 | 2 | pending |
+| pull-vs-push-model | Pull vs Push 모델 | 2 | **done (Day 19)** |
 
 ## D. 데이터베이스 내부
 
@@ -153,7 +153,7 @@
 
 - A. 분산 시스템 이론: **3 / 15**
 - B. Redis / 캐시: **1 / 14**
-- C. 메시지 큐: **3 / 12**
+- C. 메시지 큐: **4 / 12**
 - D. 데이터베이스 내부: **3 / 15**
 - E. 네트워크: **1 / 10**
 - F. 클라우드: **4 / 12**

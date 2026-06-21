@@ -274,6 +274,22 @@
         "metrics-server"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "pull-vs-push-model",
+      "title": "Push가 더 빠르다고 컨슈머에 직접 밀어 넣었더니, 트래픽이 튀자 컨슈머가 줄줄이 OOM으로 터졌다",
+      "category": "kafka",
+      "date": "2026-06-21",
+      "day": 19,
+      "tags": [
+        "pull",
+        "push",
+        "backpressure",
+        "kafka",
+        "rabbitmq",
+        "messaging"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -644,6 +660,30 @@
     {
       "from": "hpa-internals",
       "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "pull-vs-push-model",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "pull-vs-push-model",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "pull-vs-push-model",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "pull-vs-push-model",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "pull-vs-push-model",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "pull-vs-push-model",
+      "to": "sqs-vs-sns-vs-eventbridge"
     }
   ]
 }
