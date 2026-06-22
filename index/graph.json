@@ -290,6 +290,21 @@
         "messaging"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "sqli-prepared-stmt",
+      "title": "Prepared Statement만 쓰면 SQL Injection은 끝났다고 믿었는데, 정렬 컬럼 한 줄로 통째로 뚫렸다",
+      "category": "security",
+      "date": "2026-06-22",
+      "day": 20,
+      "tags": [
+        "sql-injection",
+        "prepared-statement",
+        "parameterized-query",
+        "orm",
+        "security"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -684,6 +699,30 @@
     {
       "from": "pull-vs-push-model",
       "to": "sqs-vs-sns-vs-eventbridge"
+    },
+    {
+      "from": "sqli-prepared-stmt",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "sqli-prepared-stmt",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "sqli-prepared-stmt",
+      "to": "csrf-samesite"
+    },
+    {
+      "from": "sqli-prepared-stmt",
+      "to": "jwt-vs-session"
+    },
+    {
+      "from": "sqli-prepared-stmt",
+      "to": "rbac-abac-rebac"
+    },
+    {
+      "from": "sqli-prepared-stmt",
+      "to": "secret-management"
     }
   ]
 }
