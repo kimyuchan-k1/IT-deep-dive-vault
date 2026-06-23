@@ -15,7 +15,7 @@
 
 | slug | 제목 | difficulty | status |
 |---|---|---|---|
-| cap-theorem-real-meaning | CAP 정리의 진짜 의미와 PACELC | 4 | pending |
+| cap-theorem-real-meaning | CAP 정리의 진짜 의미와 PACELC | 4 | **done (Day 21)** |
 | crdt-intro | CRDT — 동시 편집을 가능하게 하는 자료구조 | 4 | pending |
 | saga-vs-2pc | Saga 패턴 vs 2PC | 3 | pending |
 | local-first-software | Local-First Software 아키텍처 | 4 | **done (Day 13)** |
@@ -151,7 +151,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **3 / 15**
+- A. 분산 시스템 이론: **4 / 15**
 - B. Redis / 캐시: **1 / 14**
 - C. 메시지 큐: **4 / 12**
 - D. 데이터베이스 내부: **3 / 15**

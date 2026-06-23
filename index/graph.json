@@ -305,6 +305,21 @@
         "security"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "cap-theorem-real-meaning",
+      "title": "CAP에서 P는 고를 수 있는 선택지가 아니다",
+      "category": "distributed",
+      "date": "2026-06-23",
+      "day": 21,
+      "tags": [
+        "cap-theorem",
+        "pacelc",
+        "consistency",
+        "partition-tolerance",
+        "latency"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -723,6 +738,18 @@
     {
       "from": "sqli-prepared-stmt",
       "to": "secret-management"
+    },
+    {
+      "from": "cap-theorem-real-meaning",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "cap-theorem-real-meaning",
+      "to": "lamport-vs-vector-clock"
+    },
+    {
+      "from": "cap-theorem-real-meaning",
+      "to": "quorum-rw-n"
     }
   ]
 }
