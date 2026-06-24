@@ -320,6 +320,21 @@
         "latency"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "jwt-vs-session",
+      "title": "JWT로 갈아타면 세션 서버가 사라진다고 믿었는데, 로그아웃과 강제 차단이 안 돼서 결국 stateful로 되돌아갔다",
+      "category": "security",
+      "date": "2026-06-24",
+      "day": 22,
+      "tags": [
+        "jwt",
+        "session",
+        "authentication",
+        "stateless",
+        "token-revocation"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -750,6 +765,30 @@
     {
       "from": "cap-theorem-real-meaning",
       "to": "quorum-rw-n"
+    },
+    {
+      "from": "jwt-vs-session",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "jwt-vs-session",
+      "to": "oauth2-grant-types"
+    },
+    {
+      "from": "jwt-vs-session",
+      "to": "rate-limit-token-bucket"
+    },
+    {
+      "from": "jwt-vs-session",
+      "to": "rbac-abac-rebac"
+    },
+    {
+      "from": "jwt-vs-session",
+      "to": "redis-ttl-eviction"
+    },
+    {
+      "from": "jwt-vs-session",
+      "to": "sqli-prepared-stmt"
     }
   ]
 }
