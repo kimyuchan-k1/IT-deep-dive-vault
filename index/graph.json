@@ -335,6 +335,21 @@
         "token-revocation"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "redis-lua-atomic",
+      "title": "EVAL로 감싸면 원자성이 공짜로 따라온다고 믿었는데, 스크립트 하나가 인스턴스 전체를 얼려 SCRIPT KILL조차 안 먹혔다",
+      "category": "redis",
+      "date": "2026-06-25",
+      "day": 23,
+      "tags": [
+        "redis",
+        "lua",
+        "atomicity",
+        "eval",
+        "rate-limit"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -789,6 +804,34 @@
     {
       "from": "jwt-vs-session",
       "to": "sqli-prepared-stmt"
+    },
+    {
+      "from": "redis-lua-atomic",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "redis-lua-atomic",
+      "to": "lazy-freeing"
+    },
+    {
+      "from": "redis-lua-atomic",
+      "to": "rate-limit-token-bucket"
+    },
+    {
+      "from": "redis-lua-atomic",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-lua-atomic",
+      "to": "redis-cluster-slot"
+    },
+    {
+      "from": "redis-lua-atomic",
+      "to": "redis-pipelining-vs-tx"
+    },
+    {
+      "from": "redis-lua-atomic",
+      "to": "redis-scan-vs-keys"
     }
   ]
 }
