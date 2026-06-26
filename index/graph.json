@@ -350,6 +350,21 @@
         "rate-limit"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "chaos-engineering-intro",
+      "title": "프로덕션 서버를 무작위로 죽이는 게 카오스 엔지니어링인 줄 알았는데, 가설도 정상상태 정의도 없는 그건 그냥 장애였다",
+      "category": "observability",
+      "date": "2026-06-26",
+      "day": 24,
+      "tags": [
+        "chaos-engineering",
+        "resilience",
+        "steady-state",
+        "blast-radius",
+        "sre"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -832,6 +847,30 @@
     {
       "from": "redis-lua-atomic",
       "to": "redis-scan-vs-keys"
+    },
+    {
+      "from": "chaos-engineering-intro",
+      "to": "blameless-postmortem"
+    },
+    {
+      "from": "chaos-engineering-intro",
+      "to": "bulkhead-pattern"
+    },
+    {
+      "from": "chaos-engineering-intro",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "chaos-engineering-intro",
+      "to": "error-budget"
+    },
+    {
+      "from": "chaos-engineering-intro",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "chaos-engineering-intro",
+      "to": "sli-slo-sla"
     }
   ]
 }
