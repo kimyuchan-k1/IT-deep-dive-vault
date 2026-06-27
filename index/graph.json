@@ -365,6 +365,21 @@
         "sre"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "redis-rdb-vs-aof",
+      "title": "AOF를 켰으니 데이터는 안전하다고 믿었는데, 마지막 1초가 사라졌다",
+      "category": "redis",
+      "date": "2026-06-27",
+      "day": 25,
+      "tags": [
+        "redis",
+        "persistence",
+        "durability",
+        "aof",
+        "rdb"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -871,6 +886,22 @@
     {
       "from": "chaos-engineering-intro",
       "to": "sli-slo-sla"
+    },
+    {
+      "from": "redis-rdb-vs-aof",
+      "to": "lazy-freeing"
+    },
+    {
+      "from": "redis-rdb-vs-aof",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-rdb-vs-aof",
+      "to": "redis-cluster-slot"
+    },
+    {
+      "from": "redis-rdb-vs-aof",
+      "to": "wal-pitr"
     }
   ]
 }
