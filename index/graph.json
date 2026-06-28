@@ -380,6 +380,21 @@
         "rdb"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "terraform-state",
+      "title": "terraform apply를 두 명이 동시에 눌렀더니, 멀쩡하던 RDS가 통째로 사라졌다",
+      "category": "cloud",
+      "date": "2026-06-28",
+      "day": 26,
+      "tags": [
+        "terraform",
+        "iac",
+        "state",
+        "locking",
+        "backend"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -901,6 +916,26 @@
     },
     {
       "from": "redis-rdb-vs-aof",
+      "to": "wal-pitr"
+    },
+    {
+      "from": "terraform-state",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "terraform-state",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "terraform-state",
+      "to": "s3-consistency-evolution"
+    },
+    {
+      "from": "terraform-state",
+      "to": "terraform-state"
+    },
+    {
+      "from": "terraform-state",
       "to": "wal-pitr"
     }
   ]

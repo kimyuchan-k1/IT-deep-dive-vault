@@ -116,7 +116,7 @@
 | s3-consistency-evolution | S3 일관성 모델 변천사 | 3 | pending |
 | observability-stack | CloudWatch vs Datadog vs Grafana | 2 | pending |
 | helm-vs-kustomize | Helm 차트 vs Kustomize | 2 | pending |
-| terraform-state | Terraform State 백업과 잠금 | 3 | pending |
+| terraform-state | Terraform State 백업과 잠금 | 3 | **done (Day 26)** |
 | blue-green-canary-rolling | Blue/Green vs Canary vs Rolling | 2 | **done (Day 10)** |
 
 ## G. 관측성 / 안정성
@@ -156,7 +156,7 @@
 - C. 메시지 큐: **4 / 12**
 - D. 데이터베이스 내부: **3 / 15**
 - E. 네트워크: **1 / 10**
-- F. 클라우드: **4 / 12**
+- F. 클라우드: **5 / 12**
 - G. 관측성: **1 / 10**
 - H. 보안: **5 / 8**
 
