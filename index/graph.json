@@ -395,6 +395,21 @@
         "backend"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "cdn-cache-key",
+      "title": "로그인한 사용자에게 옆 사람의 장바구니가 그대로 떴다",
+      "category": "network",
+      "date": "2026-06-30",
+      "day": 27,
+      "tags": [
+        "cdn",
+        "cache-key",
+        "vary",
+        "http-caching",
+        "cache-poisoning"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -937,6 +952,26 @@
     {
       "from": "terraform-state",
       "to": "wal-pitr"
+    },
+    {
+      "from": "cdn-cache-key",
+      "to": "cache-aside-vs-write-through"
+    },
+    {
+      "from": "cdn-cache-key",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "cdn-cache-key",
+      "to": "dns-cache-ttl"
+    },
+    {
+      "from": "cdn-cache-key",
+      "to": "http-idempotency"
+    },
+    {
+      "from": "cdn-cache-key",
+      "to": "reverse-proxy-l4-l7"
     }
   ]
 }
