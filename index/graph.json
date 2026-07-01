@@ -410,6 +410,21 @@
         "cache-poisoning"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "raft-easier-than-paxos",
+      "title": "Raft가 Paxos보다 쉬운 건 더 똑똑해서가 아니라, 이해가능성을 목표로 설계했기 때문이다",
+      "category": "distributed",
+      "date": "2026-07-01",
+      "day": 28,
+      "tags": [
+        "raft",
+        "paxos",
+        "consensus",
+        "leader-election",
+        "log-replication"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -972,6 +987,18 @@
     {
       "from": "cdn-cache-key",
       "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "raft-easier-than-paxos",
+      "to": "cap-theorem-real-meaning"
+    },
+    {
+      "from": "raft-easier-than-paxos",
+      "to": "paxos-5min"
+    },
+    {
+      "from": "raft-easier-than-paxos",
+      "to": "quorum-rw-n"
     }
   ]
 }

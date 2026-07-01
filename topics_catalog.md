@@ -26,7 +26,7 @@
 | redlock-debate | 분산 락 — Redlock 논쟁 | 4 | pending |
 | two-generals | Two Generals Problem이 시스템에 미치는 영향 | 3 | pending |
 | paxos-5min | Paxos를 5분만에 직관적으로 | 5 | pending |
-| raft-easier-than-paxos | Raft가 Paxos보다 쉬운 이유 | 4 | pending |
+| raft-easier-than-paxos | Raft가 Paxos보다 쉬운 이유 | 4 | **done (Day 28)** |
 | idempotency-key | Idempotency Key 설계 | 2 | pending |
 | outbox-pattern | 분산 트랜잭션 — Outbox 패턴 | 3 | pending |
 | cdc-debezium | CDC와 Debezium | 3 | **done (Day 11)** |
@@ -151,7 +151,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **4 / 15**
+- A. 분산 시스템 이론: **5 / 15**
 - B. Redis / 캐시: **3 / 14**
 - C. 메시지 큐: **4 / 12**
 - D. 데이터베이스 내부: **3 / 15**
