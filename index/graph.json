@@ -425,6 +425,21 @@
         "log-replication"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "at-least-once-vs-at-most-once",
+      "title": "메시지가 두 번 왔다고 브로커를 의심했는데, 범인은 ack를 늦게 보낸 내 컨슈머였다",
+      "category": "kafka",
+      "date": "2026-07-02",
+      "day": 29,
+      "tags": [
+        "messaging",
+        "delivery-semantics",
+        "at-least-once",
+        "idempotency",
+        "ack"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -999,6 +1014,30 @@
     {
       "from": "raft-easier-than-paxos",
       "to": "quorum-rw-n"
+    },
+    {
+      "from": "at-least-once-vs-at-most-once",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "at-least-once-vs-at-most-once",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "at-least-once-vs-at-most-once",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "at-least-once-vs-at-most-once",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "at-least-once-vs-at-most-once",
+      "to": "pull-vs-push-model"
+    },
+    {
+      "from": "at-least-once-vs-at-most-once",
+      "to": "two-generals"
     }
   ]
 }
