@@ -440,6 +440,21 @@
         "ack"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "mtls-zero-trust",
+      "title": "사내망 안이니 서비스끼리는 믿어도 된다고 평문으로 뒀는데, 파드 하나 뚫리자 내부 API가 전부 무방비로 열렸다",
+      "category": "security",
+      "date": "2026-07-03",
+      "day": 30,
+      "tags": [
+        "mtls",
+        "zero-trust",
+        "service-mesh",
+        "tls",
+        "authentication"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1038,6 +1053,26 @@
     {
       "from": "at-least-once-vs-at-most-once",
       "to": "two-generals"
+    },
+    {
+      "from": "mtls-zero-trust",
+      "to": "jwt-vs-session"
+    },
+    {
+      "from": "mtls-zero-trust",
+      "to": "oauth2-grant-types"
+    },
+    {
+      "from": "mtls-zero-trust",
+      "to": "rbac-abac-rebac"
+    },
+    {
+      "from": "mtls-zero-trust",
+      "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "mtls-zero-trust",
+      "to": "secret-management"
     }
   ]
 }

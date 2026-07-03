@@ -140,7 +140,7 @@
 |---|---|---|---|
 | oauth2-grant-types | OAuth2 4가지 grant type | 3 | **done (Day 16)** |
 | jwt-vs-session | JWT vs Session 쿠키 | 3 | **done (Day 22)** |
-| mtls-zero-trust | mTLS와 zero-trust | 3 | pending |
+| mtls-zero-trust | mTLS와 zero-trust | 3 | **done (Day 30)** |
 | rate-limit-token-bucket | Rate Limiting (Token vs Leaky Bucket) | 3 | pending |
 | sqli-prepared-stmt | SQL Injection — Prepared Statement 한계 | 3 | **done (Day 20)** |
 | csrf-samesite | CSRF와 SameSite 쿠키 | 2 | **done (Day 8)** |
@@ -158,6 +158,6 @@
 - E. 네트워크: **2 / 10**
 - F. 클라우드: **5 / 12**
 - G. 관측성: **1 / 10**
-- H. 보안: **5 / 8**
+- H. 보안: **6 / 8**
 
 **총 94개. 약 3개월치.**
