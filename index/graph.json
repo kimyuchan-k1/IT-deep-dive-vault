@@ -455,6 +455,21 @@
         "authentication"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "saga-vs-2pc",
+      "title": "주문·결제·재고를 하나로 묶으려고 2PC를 걸었더니, 코디네이터가 죽은 8초 동안 세 서비스의 행이 전부 잠겨 아무 주문도 못 받았다",
+      "category": "distributed",
+      "date": "2026-07-04",
+      "day": 31,
+      "tags": [
+        "saga",
+        "2pc",
+        "distributed-transaction",
+        "compensation",
+        "consistency"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1073,6 +1088,26 @@
     {
       "from": "mtls-zero-trust",
       "to": "secret-management"
+    },
+    {
+      "from": "saga-vs-2pc",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "saga-vs-2pc",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "saga-vs-2pc",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "saga-vs-2pc",
+      "to": "saga-orchestrator-vs-choreography"
+    },
+    {
+      "from": "saga-vs-2pc",
+      "to": "two-generals"
     }
   ]
 }
