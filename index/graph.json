@@ -470,6 +470,21 @@
         "consistency"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "hash-merge-nested-loop-join",
+      "title": "같은 JOIN인데 왜 어떤 건 0.1초, 어떤 건 40분 걸리나",
+      "category": "db",
+      "date": "2026-07-05",
+      "day": 32,
+      "tags": [
+        "database",
+        "join",
+        "query-planner",
+        "nested-loop",
+        "hash-join"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1108,6 +1123,22 @@
     {
       "from": "saga-vs-2pc",
       "to": "two-generals"
+    },
+    {
+      "from": "hash-merge-nested-loop-join",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "hash-merge-nested-loop-join",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "hash-merge-nested-loop-join",
+      "to": "index-skip-scan-covering"
+    },
+    {
+      "from": "hash-merge-nested-loop-join",
+      "to": "mvcc-how"
     }
   ]
 }
