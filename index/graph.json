@@ -485,6 +485,21 @@
         "hash-join"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "two-generals",
+      "title": "재시도를 아무리 늘려도 \"확실히 전달됐다\"는 영원히 알 수 없다",
+      "category": "distributed",
+      "date": "2026-07-06",
+      "day": 33,
+      "tags": [
+        "distributed",
+        "consensus",
+        "reliability",
+        "messaging",
+        "two-generals"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1139,6 +1154,26 @@
     {
       "from": "hash-merge-nested-loop-join",
       "to": "mvcc-how"
+    },
+    {
+      "from": "two-generals",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "two-generals",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "two-generals",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "two-generals",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "two-generals",
+      "to": "saga-vs-2pc"
     }
   ]
 }

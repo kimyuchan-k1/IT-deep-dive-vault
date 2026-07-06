@@ -24,7 +24,7 @@
 | eventual-vs-strong-consistency | Eventual vs Strong Consistency 비용 | 3 | pending |
 | read-your-writes | Read-your-writes / Monotonic Read | 3 | pending |
 | redlock-debate | 분산 락 — Redlock 논쟁 | 4 | pending |
-| two-generals | Two Generals Problem이 시스템에 미치는 영향 | 3 | pending |
+| two-generals | Two Generals Problem이 시스템에 미치는 영향 | 3 | **done (Day 33)** |
 | paxos-5min | Paxos를 5분만에 직관적으로 | 5 | pending |
 | raft-easier-than-paxos | Raft가 Paxos보다 쉬운 이유 | 4 | **done (Day 28)** |
 | idempotency-key | Idempotency Key 설계 | 2 | pending |
@@ -151,7 +151,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **6 / 15**
+- A. 분산 시스템 이론: **7 / 15**
 - B. Redis / 캐시: **3 / 14**
 - C. 메시지 큐: **5 / 12**
 - D. 데이터베이스 내부: **4 / 15**
