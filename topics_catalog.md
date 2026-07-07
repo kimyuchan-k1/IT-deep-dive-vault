@@ -98,7 +98,7 @@
 | dns-cache-ttl | DNS 캐시와 TTL 튜닝 | 2 | **done (Day 14)** |
 | grpc-vs-rest | gRPC가 REST보다 빠른 진짜 이유 | 2 | pending |
 | cdn-cache-key | CDN 캐시 키 설계 | 3 | **done (Day 27)** |
-| reverse-proxy-l4-l7 | Reverse Proxy와 L4/L7 LB | 2 | pending |
+| reverse-proxy-l4-l7 | Reverse Proxy와 L4/L7 LB | 2 | **done (Day 34)** |
 | http-idempotency | Idempotency를 위한 HTTP 메서드 설계 | 2 | pending |
 | sse-prod-ops | Server-Sent Events 실전 운영 | 3 | pending |
 
@@ -155,7 +155,7 @@
 - B. Redis / 캐시: **3 / 14**
 - C. 메시지 큐: **5 / 12**
 - D. 데이터베이스 내부: **4 / 15**
-- E. 네트워크: **2 / 10**
+- E. 네트워크: **3 / 10**
 - F. 클라우드: **5 / 12**
 - G. 관측성: **1 / 10**
 - H. 보안: **6 / 8**

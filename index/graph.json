@@ -500,6 +500,21 @@
         "two-generals"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "reverse-proxy-l4-l7",
+      "title": "L4 로드밸런서를 L7처럼 쓰려다, 헬스체크는 통과하는데 절반의 요청이 죽었다",
+      "category": "network",
+      "date": "2026-07-07",
+      "day": 34,
+      "tags": [
+        "network",
+        "load-balancer",
+        "reverse-proxy",
+        "l4",
+        "l7"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -1174,6 +1189,26 @@
     {
       "from": "two-generals",
       "to": "saga-vs-2pc"
+    },
+    {
+      "from": "reverse-proxy-l4-l7",
+      "to": "cdn-cache-key"
+    },
+    {
+      "from": "reverse-proxy-l4-l7",
+      "to": "grpc-vs-rest"
+    },
+    {
+      "from": "reverse-proxy-l4-l7",
+      "to": "http2-vs-http3"
+    },
+    {
+      "from": "reverse-proxy-l4-l7",
+      "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "reverse-proxy-l4-l7",
+      "to": "websocket-vs-sse-vs-polling"
     }
   ]
 }
