@@ -515,6 +515,21 @@
         "l7"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "bulkhead-pattern",
+      "title": "결제 API 하나가 느려졌을 뿐인데, 상품 조회도 로그인도 전부 같이 죽었다",
+      "category": "observability",
+      "date": "2026-07-08",
+      "day": 35,
+      "tags": [
+        "resilience",
+        "bulkhead",
+        "thread-pool",
+        "isolation",
+        "fault-tolerance"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1209,6 +1224,26 @@
     {
       "from": "reverse-proxy-l4-l7",
       "to": "websocket-vs-sse-vs-polling"
+    },
+    {
+      "from": "bulkhead-pattern",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "bulkhead-pattern",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "bulkhead-pattern",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "bulkhead-pattern",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "bulkhead-pattern",
+      "to": "sli-slo-sla"
     }
   ]
 }

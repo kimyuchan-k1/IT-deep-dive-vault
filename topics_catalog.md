@@ -128,7 +128,7 @@
 | distributed-tracing-otel | 분산 트레이싱 (OpenTelemetry) | 3 | pending |
 | structured-logging | Structured Logging이 grep보다 나은 이유 | 2 | pending |
 | circuit-breaker | Circuit Breaker 패턴 | 2 | pending |
-| bulkhead-pattern | Bulkhead 패턴 | 3 | pending |
+| bulkhead-pattern | Bulkhead 패턴 | 3 | **done (Day 35)** |
 | retry-exponential-backoff-jitter | Retry + Exponential Backoff + Jitter | 2 | pending |
 | chaos-engineering-intro | Chaos Engineering 입문 | 3 | **done (Day 24)** |
 | blameless-postmortem | Postmortem 잘 쓰는 법 | 2 | pending |
@@ -157,7 +157,7 @@
 - D. 데이터베이스 내부: **4 / 15**
 - E. 네트워크: **3 / 10**
 - F. 클라우드: **5 / 12**
-- G. 관측성: **1 / 10**
+- G. 관측성: **2 / 10**
 - H. 보안: **6 / 8**
 
 **총 94개. 약 3개월치.**
