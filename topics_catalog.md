@@ -76,7 +76,7 @@
 | mvcc-how | MVCC가 락을 어떻게 줄이나 | 3 | pending |
 | phantom-read-isolation | Phantom Read와 격리 수준 | 3 | pending |
 | hash-merge-nested-loop-join | Hash/Merge/Nested Loop Join | 3 | **done (Day 32)** |
-| index-skip-scan-covering | Index Skip Scan과 Covering Index | 3 | pending |
+| index-skip-scan-covering | Index Skip Scan과 Covering Index | 3 | **done (Day 36)** |
 | connection-pool-sizing | Connection Pool 사이즈 결정 공식 | 3 | pending |
 | wal-pitr | WAL과 PITR | 3 | pending |
 | postgres-vacuum-bloat | PostgreSQL VACUUM과 bloat | 4 | pending |
@@ -154,7 +154,7 @@
 - A. 분산 시스템 이론: **7 / 15**
 - B. Redis / 캐시: **3 / 14**
 - C. 메시지 큐: **5 / 12**
-- D. 데이터베이스 내부: **4 / 15**
+- D. 데이터베이스 내부: **5 / 15**
 - E. 네트워크: **3 / 10**
 - F. 클라우드: **5 / 12**
 - G. 관측성: **2 / 10**

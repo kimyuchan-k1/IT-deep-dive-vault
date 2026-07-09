@@ -530,6 +530,21 @@
         "fault-tolerance"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "index-skip-scan-covering",
+      "title": "인덱스를 탔는데 왜 여전히 느린가 — 진짜 병목은 테이블 재방문이었다",
+      "category": "db",
+      "date": "2026-07-09",
+      "day": 36,
+      "tags": [
+        "database",
+        "index",
+        "covering-index",
+        "skip-scan",
+        "random-io"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1244,6 +1259,22 @@
     {
       "from": "bulkhead-pattern",
       "to": "sli-slo-sla"
+    },
+    {
+      "from": "index-skip-scan-covering",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "index-skip-scan-covering",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "index-skip-scan-covering",
+      "to": "hash-merge-nested-loop-join"
+    },
+    {
+      "from": "index-skip-scan-covering",
+      "to": "innodb-buffer-pool"
     }
   ]
 }
