@@ -545,6 +545,21 @@
         "random-io"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "dead-letter-queue",
+      "title": "실패하면 재시도하면 된다고 믿었는데, 메시지 한 건이 큐 전체를 멈춰 세웠다",
+      "category": "kafka",
+      "date": "2026-07-10",
+      "day": 37,
+      "tags": [
+        "messaging",
+        "dead-letter-queue",
+        "poison-message",
+        "retry",
+        "backpressure"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -1275,6 +1290,26 @@
     {
       "from": "index-skip-scan-covering",
       "to": "innodb-buffer-pool"
+    },
+    {
+      "from": "dead-letter-queue",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "dead-letter-queue",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "dead-letter-queue",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "dead-letter-queue",
+      "to": "kafka-partition-math"
+    },
+    {
+      "from": "dead-letter-queue",
+      "to": "retry-exponential-backoff-jitter"
     }
   ]
 }
