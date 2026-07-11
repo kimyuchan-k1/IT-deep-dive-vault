@@ -560,6 +560,21 @@
         "backpressure"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "hyperloglog-approx-counting",
+      "title": "10억 개를 세는데 메모리 12KB면 충분하다 — HyperLogLog",
+      "category": "db",
+      "date": "2026-07-11",
+      "day": 38,
+      "tags": [
+        "hyperloglog",
+        "cardinality",
+        "probabilistic",
+        "redis",
+        "approximate-counting"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1310,6 +1325,22 @@
     {
       "from": "dead-letter-queue",
       "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "hyperloglog-approx-counting",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "hyperloglog-approx-counting",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "hyperloglog-approx-counting",
+      "to": "redis-lua-atomic"
+    },
+    {
+      "from": "hyperloglog-approx-counting",
+      "to": "redis-ttl-eviction"
     }
   ]
 }
