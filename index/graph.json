@@ -575,6 +575,21 @@
         "approximate-counting"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "redis-sorted-set-queue",
+      "title": "선착순 큐를 카운터로 만들면 왜 DB가 녹아내리나 — Redis Sorted Set",
+      "category": "redis",
+      "date": "2026-07-12",
+      "day": 39,
+      "tags": [
+        "redis",
+        "sorted-set",
+        "queue",
+        "concurrency",
+        "flash-sale"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1341,6 +1356,22 @@
     {
       "from": "hyperloglog-approx-counting",
       "to": "redis-ttl-eviction"
+    },
+    {
+      "from": "redis-sorted-set-queue",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "redis-sorted-set-queue",
+      "to": "rate-limit-token-bucket"
+    },
+    {
+      "from": "redis-sorted-set-queue",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-sorted-set-queue",
+      "to": "redis-lua-atomic"
     }
   ]
 }

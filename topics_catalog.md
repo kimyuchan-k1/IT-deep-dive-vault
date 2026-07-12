@@ -36,7 +36,7 @@
 | slug | 제목 | difficulty | status |
 |---|---|---|---|
 | redis-bigkey | Redis BigKey가 클러스터를 죽이는 이유 | 3 | **done (Day 1)** |
-| redis-sorted-set-queue | Redis Sorted Set으로 선착순 큐 | 3 | pending |
+| redis-sorted-set-queue | Redis Sorted Set으로 선착순 큐 | 3 | **done (Day 39)** |
 | redis-rdb-vs-aof | RDB vs AOF | 2 | **done (Day 25)** |
 | cache-stampede | Cache Stampede와 PER, XFetch | 4 | pending |
 | cache-aside-vs-write-through | Cache-Aside vs Write-Through vs Write-Behind | 2 | pending |
@@ -152,7 +152,7 @@
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
 - A. 분산 시스템 이론: **7 / 15**
-- B. Redis / 캐시: **3 / 14**
+- B. Redis / 캐시: **4 / 14**
 - C. 메시지 큐: **6 / 12**
 - D. 데이터베이스 내부: **6 / 15**
 - E. 네트워크: **3 / 10**
