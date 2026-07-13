@@ -590,6 +590,20 @@
         "flash-sale"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "circuit-breaker",
+      "title": "재시도를 촘촘히 넣었는데 장애가 더 커졌다 — Circuit Breaker",
+      "category": "observability",
+      "date": "2026-07-13",
+      "day": 40,
+      "tags": [
+        "resilience",
+        "circuit-breaker",
+        "cascading-failure",
+        "timeout"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -1372,6 +1386,22 @@
     {
       "from": "redis-sorted-set-queue",
       "to": "redis-lua-atomic"
+    },
+    {
+      "from": "circuit-breaker",
+      "to": "bulkhead-pattern"
+    },
+    {
+      "from": "circuit-breaker",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "circuit-breaker",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "circuit-breaker",
+      "to": "retry-exponential-backoff-jitter"
     }
   ]
 }
