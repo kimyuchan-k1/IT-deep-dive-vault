@@ -604,6 +604,20 @@
         "timeout"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "replication-lag",
+      "title": "읽기 부하를 리플리카로 넘겼는데, 방금 쓴 데이터가 사라졌다",
+      "category": "db",
+      "date": "2026-07-14",
+      "day": 41,
+      "tags": [
+        "replication",
+        "read-replica",
+        "consistency",
+        "replication-lag"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1402,6 +1416,26 @@
     {
       "from": "circuit-breaker",
       "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "replication-lag",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "replication-lag",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "replication-lag",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "replication-lag",
+      "to": "read-your-writes"
+    },
+    {
+      "from": "replication-lag",
+      "to": "wal-pitr"
     }
   ]
 }
