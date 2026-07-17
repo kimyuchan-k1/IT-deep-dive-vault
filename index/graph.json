@@ -618,6 +618,20 @@
         "replication-lag"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "distributed-tracing-otel",
+      "title": "로그를 다 모았는데 왜 느린지는 끝내 못 찾았다",
+      "category": "observability",
+      "date": "2026-07-17",
+      "day": 42,
+      "tags": [
+        "opentelemetry",
+        "tracing",
+        "context-propagation",
+        "sampling"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1436,6 +1450,26 @@
     {
       "from": "replication-lag",
       "to": "wal-pitr"
+    },
+    {
+      "from": "distributed-tracing-otel",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "distributed-tracing-otel",
+      "to": "p99-latency-tail"
+    },
+    {
+      "from": "distributed-tracing-otel",
+      "to": "replication-lag"
+    },
+    {
+      "from": "distributed-tracing-otel",
+      "to": "slo-error-budget"
+    },
+    {
+      "from": "distributed-tracing-otel",
+      "to": "structured-logging"
     }
   ]
 }
