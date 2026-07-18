@@ -632,6 +632,21 @@
         "sampling"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "s3-consistency-evolution",
+      "title": "S3가 방금 올린 파일을 \"없다\"고 한 시절이 있었다",
+      "category": "cloud",
+      "date": "2026-07-18",
+      "day": 43,
+      "tags": [
+        "s3",
+        "consistency",
+        "aws",
+        "eventual-consistency",
+        "distributed"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1470,6 +1485,22 @@
     {
       "from": "distributed-tracing-otel",
       "to": "structured-logging"
+    },
+    {
+      "from": "s3-consistency-evolution",
+      "to": "cap-theorem"
+    },
+    {
+      "from": "s3-consistency-evolution",
+      "to": "dynamodb-consistency-read"
+    },
+    {
+      "from": "s3-consistency-evolution",
+      "to": "quorum-rw-n"
+    },
+    {
+      "from": "s3-consistency-evolution",
+      "to": "replication-lag"
     }
   ]
 }
