@@ -41,7 +41,7 @@
 | cache-stampede | Cache Stampede와 PER, XFetch | 4 | pending |
 | cache-aside-vs-write-through | Cache-Aside vs Write-Through vs Write-Behind | 2 | pending |
 | redis-cluster-slot | Redis Cluster의 hash slot 16384의 의미 | 3 | pending |
-| redis-pipelining-vs-tx | Pipelining vs Transaction (MULTI/EXEC) | 2 | pending |
+| redis-pipelining-vs-tx | Pipelining vs Transaction (MULTI/EXEC) | 2 | **done (Day 44)** |
 | redis-lua-atomic | Redis Lua로 원자적 연산 | 3 | **done (Day 23)** |
 | redis-scan-vs-keys | SCAN을 KEYS 대신 써야 하는 이유 | 1 | pending |
 | redis-streams-vs-kafka | Redis Streams vs Kafka | 3 | pending |
@@ -152,7 +152,7 @@
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
 - A. 분산 시스템 이론: **7 / 15**
-- B. Redis / 캐시: **4 / 14**
+- B. Redis / 캐시: **5 / 14**
 - C. 메시지 큐: **6 / 12**
 - D. 데이터베이스 내부: **7 / 15**
 - E. 네트워크: **3 / 10**

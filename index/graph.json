@@ -647,6 +647,21 @@
         "distributed"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "redis-pipelining-vs-tx",
+      "title": "파이프라인으로 묶었으니 원자적이겠지 — 그 사이로 남의 명령이 끼어든다",
+      "category": "redis",
+      "date": "2026-07-19",
+      "day": 44,
+      "tags": [
+        "redis",
+        "pipelining",
+        "transaction",
+        "multi-exec",
+        "atomicity"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -1501,6 +1516,22 @@
     {
       "from": "s3-consistency-evolution",
       "to": "replication-lag"
+    },
+    {
+      "from": "redis-pipelining-vs-tx",
+      "to": "optimistic-locking"
+    },
+    {
+      "from": "redis-pipelining-vs-tx",
+      "to": "redis-cluster-hash-slot"
+    },
+    {
+      "from": "redis-pipelining-vs-tx",
+      "to": "redis-lua-script"
+    },
+    {
+      "from": "redis-pipelining-vs-tx",
+      "to": "redis-single-thread"
     }
   ]
 }
