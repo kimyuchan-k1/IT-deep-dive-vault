@@ -662,6 +662,19 @@
         "atomicity"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "idempotency-key",
+      "title": "재시도를 안전하게 넣었더니 결제가 두 번 나갔다 — Idempotency Key",
+      "category": "distributed",
+      "date": "2026-07-21",
+      "day": 45,
+      "tags": [
+        "idempotency",
+        "retry",
+        "payment"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -1532,6 +1545,26 @@
     {
       "from": "redis-pipelining-vs-tx",
       "to": "redis-single-thread"
+    },
+    {
+      "from": "idempotency-key",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "idempotency-key",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "idempotency-key",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "idempotency-key",
+      "to": "redis-lua-atomic"
+    },
+    {
+      "from": "idempotency-key",
+      "to": "upsert-idempotency"
     }
   ]
 }
