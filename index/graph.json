@@ -675,6 +675,20 @@
         "payment"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "structured-logging",
+      "title": "로그는 다 찍혔는데, 장애 원인은 grep으로 끝내 못 찾았다 — Structured Logging",
+      "category": "observability",
+      "date": "2026-07-22",
+      "day": 46,
+      "tags": [
+        "logging",
+        "observability",
+        "json-log",
+        "correlation-id"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -1565,6 +1579,22 @@
     {
       "from": "idempotency-key",
       "to": "upsert-idempotency"
+    },
+    {
+      "from": "structured-logging",
+      "to": "distributed-tracing-otel"
+    },
+    {
+      "from": "structured-logging",
+      "to": "error-budget"
+    },
+    {
+      "from": "structured-logging",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "structured-logging",
+      "to": "sli-slo-sla"
     }
   ]
 }
