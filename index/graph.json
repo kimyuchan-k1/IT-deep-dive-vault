@@ -689,6 +689,20 @@
         "correlation-id"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "read-your-writes",
+      "title": "방금 쓴 내 댓글이 새로고침하니 사라졌다 — Read-your-writes",
+      "category": "distributed",
+      "date": "2026-07-23",
+      "day": 47,
+      "tags": [
+        "consistency",
+        "replication",
+        "session-consistency",
+        "monotonic-read"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1595,6 +1609,26 @@
     {
       "from": "structured-logging",
       "to": "sli-slo-sla"
+    },
+    {
+      "from": "read-your-writes",
+      "to": "cap-theorem-real-meaning"
+    },
+    {
+      "from": "read-your-writes",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "read-your-writes",
+      "to": "lamport-vs-vector-clock"
+    },
+    {
+      "from": "read-your-writes",
+      "to": "quorum-rw-n"
+    },
+    {
+      "from": "read-your-writes",
+      "to": "replication-lag"
     }
   ]
 }
