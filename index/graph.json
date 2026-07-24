@@ -703,6 +703,21 @@
         "monotonic-read"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "connection-pool-sizing",
+      "title": "커넥션 풀을 100으로 키웠더니 오히려 느려졌다",
+      "category": "db",
+      "date": "2026-07-24",
+      "day": 48,
+      "tags": [
+        "connection-pool",
+        "hikaricp",
+        "littles-law",
+        "throughput",
+        "database"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1628,6 +1643,26 @@
     },
     {
       "from": "read-your-writes",
+      "to": "replication-lag"
+    },
+    {
+      "from": "connection-pool-sizing",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "connection-pool-sizing",
+      "to": "bulkhead-pattern"
+    },
+    {
+      "from": "connection-pool-sizing",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "connection-pool-sizing",
+      "to": "connection-pool-timeout"
+    },
+    {
+      "from": "connection-pool-sizing",
       "to": "replication-lag"
     }
   ]
