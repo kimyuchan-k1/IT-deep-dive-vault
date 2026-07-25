@@ -59,7 +59,7 @@
 | dead-letter-queue | Dead Letter Queue 패턴 | 2 | **done (Day 37)** |
 | at-least-once-vs-at-most-once | At-least-once vs At-most-once | 2 | **done (Day 29)** |
 | rabbitmq-vs-kafka | RabbitMQ vs Kafka 결정 트리 | 3 | pending |
-| backpressure-patterns | Backpressure 4가지 패턴 | 4 | pending |
+| backpressure-patterns | Backpressure 4가지 패턴 | 4 | **done (Day 49)** |
 | event-sourcing-intro | Event Sourcing 입문 | 3 | pending |
 | cqrs-when-needed | CQRS는 언제 진짜 필요한가 | 3 | pending |
 | saga-orchestrator-vs-choreography | Saga Orchestrator vs Choreography | 3 | **done (Day 7)** |
@@ -153,7 +153,7 @@
 
 - A. 분산 시스템 이론: **9 / 15**
 - B. Redis / 캐시: **5 / 14**
-- C. 메시지 큐: **6 / 12**
+- C. 메시지 큐: **7 / 12**
 - D. 데이터베이스 내부: **8 / 15**
 - E. 네트워크: **3 / 10**
 - F. 클라우드: **6 / 12**
