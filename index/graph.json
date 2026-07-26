@@ -733,6 +733,21 @@
         "messaging"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "sharding-strategies",
+      "title": "샤드 8개로 쪼갰는데 1번 샤드만 CPU 90%였다",
+      "category": "db",
+      "date": "2026-07-26",
+      "day": 50,
+      "tags": [
+        "sharding",
+        "partitioning",
+        "consistent-hashing",
+        "hotspot",
+        "scalability"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1699,6 +1714,26 @@
     {
       "from": "backpressure-patterns",
       "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "sharding-strategies",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "sharding-strategies",
+      "to": "consistent-hashing"
+    },
+    {
+      "from": "sharding-strategies",
+      "to": "distributed-transaction-saga"
+    },
+    {
+      "from": "sharding-strategies",
+      "to": "hash-merge-nested-loop-join"
+    },
+    {
+      "from": "sharding-strategies",
+      "to": "replication-lag"
     }
   ]
 }
