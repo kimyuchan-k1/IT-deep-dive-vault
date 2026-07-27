@@ -748,6 +748,21 @@
         "scalability"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "aws-vpc-design",
+      "title": "AZ 3개에 나눠 깔았는데 AZ 하나 죽자 서비스 전체가 멈췄다",
+      "category": "cloud",
+      "date": "2026-07-27",
+      "day": 51,
+      "tags": [
+        "aws",
+        "vpc",
+        "availability-zone",
+        "nat-gateway",
+        "high-availability"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1734,6 +1749,34 @@
     {
       "from": "sharding-strategies",
       "to": "replication-lag"
+    },
+    {
+      "from": "aws-vpc-design",
+      "to": "chaos-engineering-intro"
+    },
+    {
+      "from": "aws-vpc-design",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "aws-vpc-design",
+      "to": "dns-cache-ttl"
+    },
+    {
+      "from": "aws-vpc-design",
+      "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "aws-vpc-design",
+      "to": "replication-lag"
+    },
+    {
+      "from": "aws-vpc-design",
+      "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "aws-vpc-design",
+      "to": "terraform-state"
     }
   ]
 }

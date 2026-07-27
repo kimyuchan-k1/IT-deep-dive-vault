@@ -111,7 +111,7 @@
 | hpa-internals | HPA의 진짜 동작 | 3 | **done (Day 18)** |
 | service-mesh-istio | Service Mesh가 풀어주는 것 | 3 | pending |
 | sidecar-tradeoff | Sidecar 패턴 트레이드오프 | 3 | **done (Day 6)** |
-| aws-vpc-design | AWS VPC 디자인 — AZ 분리 | 3 | pending |
+| aws-vpc-design | AWS VPC 디자인 — AZ 분리 | 3 | **done (Day 51)** |
 | spot-instance-safe | Spot Instance 안전하게 쓰는 법 | 3 | pending |
 | s3-consistency-evolution | S3 일관성 모델 변천사 | 3 | **done (Day 43)** |
 | observability-stack | CloudWatch vs Datadog vs Grafana | 2 | pending |
@@ -156,7 +156,7 @@
 - C. 메시지 큐: **7 / 12**
 - D. 데이터베이스 내부: **9 / 15**
 - E. 네트워크: **3 / 10**
-- F. 클라우드: **6 / 12**
+- F. 클라우드: **7 / 12**
 - G. 관측성: **5 / 10**
 - H. 보안: **6 / 8**
 
