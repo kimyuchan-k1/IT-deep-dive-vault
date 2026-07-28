@@ -763,6 +763,22 @@
         "high-availability"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "wal-pitr",
+      "title": "매일 백업이 돌고 있었는데, 복구해보니 3시간치가 사라졌다",
+      "category": "db",
+      "date": "2026-07-28",
+      "day": 52,
+      "tags": [
+        "wal",
+        "pitr",
+        "backup",
+        "recovery",
+        "postgresql",
+        "durability"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1777,6 +1793,26 @@
     {
       "from": "aws-vpc-design",
       "to": "terraform-state"
+    },
+    {
+      "from": "wal-pitr",
+      "to": "blameless-postmortem"
+    },
+    {
+      "from": "wal-pitr",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "wal-pitr",
+      "to": "lsm-tree-rocksdb"
+    },
+    {
+      "from": "wal-pitr",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "wal-pitr",
+      "to": "replication-lag"
     }
   ]
 }

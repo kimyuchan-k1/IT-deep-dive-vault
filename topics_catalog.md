@@ -78,7 +78,7 @@
 | hash-merge-nested-loop-join | Hash/Merge/Nested Loop Join | 3 | **done (Day 32)** |
 | index-skip-scan-covering | Index Skip Scan과 Covering Index | 3 | **done (Day 36)** |
 | connection-pool-sizing | Connection Pool 사이즈 결정 공식 | 3 | **done (Day 48)** |
-| wal-pitr | WAL과 PITR | 3 | pending |
+| wal-pitr | WAL과 PITR | 3 | **done (Day 52)** |
 | postgres-vacuum-bloat | PostgreSQL VACUUM과 bloat | 4 | pending |
 | innodb-buffer-pool | MySQL InnoDB 버퍼풀 튜닝 | 4 | **done (Day 5)** |
 | replication-lag | Read Replica replication lag 다루기 | 3 | **done (Day 41)** |
@@ -154,7 +154,7 @@
 - A. 분산 시스템 이론: **9 / 15**
 - B. Redis / 캐시: **5 / 14**
 - C. 메시지 큐: **7 / 12**
-- D. 데이터베이스 내부: **9 / 15**
+- D. 데이터베이스 내부: **10 / 15**
 - E. 네트워크: **3 / 10**
 - F. 클라우드: **7 / 12**
 - G. 관측성: **5 / 10**
