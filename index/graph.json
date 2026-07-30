@@ -779,6 +779,22 @@
         "durability"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "crdt-intro",
+      "title": "지운 문장이 동기화 후 되살아났다",
+      "category": "distributed",
+      "date": "2026-07-30",
+      "day": 53,
+      "tags": [
+        "crdt",
+        "eventual-consistency",
+        "replication",
+        "collaborative-editing",
+        "lww",
+        "semilattice"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -1813,6 +1829,26 @@
     {
       "from": "wal-pitr",
       "to": "replication-lag"
+    },
+    {
+      "from": "crdt-intro",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "crdt-intro",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "crdt-intro",
+      "to": "paxos-5min"
+    },
+    {
+      "from": "crdt-intro",
+      "to": "quorum-rw-n"
+    },
+    {
+      "from": "crdt-intro",
+      "to": "read-your-writes"
     }
   ]
 }
