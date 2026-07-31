@@ -795,6 +795,22 @@
         "semilattice"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "redis-acl",
+      "title": "테넌트마다 ACL을 걸었는데 한 테넌트가 남의 세션을 다 날렸다",
+      "category": "redis",
+      "date": "2026-07-31",
+      "day": 54,
+      "tags": [
+        "redis",
+        "acl",
+        "multi-tenancy",
+        "security",
+        "maxmemory",
+        "eviction"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1849,6 +1865,30 @@
     {
       "from": "crdt-intro",
       "to": "read-your-writes"
+    },
+    {
+      "from": "redis-acl",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "redis-acl",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "redis-acl",
+      "to": "rbac-abac-rebac"
+    },
+    {
+      "from": "redis-acl",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-acl",
+      "to": "redis-cluster-slot"
+    },
+    {
+      "from": "redis-acl",
+      "to": "redis-lua-atomic"
     }
   ]
 }
