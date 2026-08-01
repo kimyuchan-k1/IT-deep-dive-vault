@@ -132,7 +132,7 @@
 | retry-exponential-backoff-jitter | Retry + Exponential Backoff + Jitter | 2 | pending |
 | chaos-engineering-intro | Chaos Engineering 입문 | 3 | **done (Day 24)** |
 | blameless-postmortem | Postmortem 잘 쓰는 법 | 2 | pending |
-| error-budget | Error Budget로 배포 속도 결정 | 3 | pending |
+| error-budget | Error Budget로 배포 속도 결정 | 3 | **done (Day 55)** |
 
 ## H. 보안 / 인증
 
@@ -157,7 +157,7 @@
 - D. 데이터베이스 내부: **10 / 15**
 - E. 네트워크: **3 / 10**
 - F. 클라우드: **7 / 12**
-- G. 관측성: **5 / 10**
+- G. 관측성: **6 / 10**
 - H. 보안: **6 / 8**
 
 **총 94개. 약 3개월치.**

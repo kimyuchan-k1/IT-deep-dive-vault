@@ -811,6 +811,22 @@
         "eviction"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "error-budget",
+      "title": "장애가 한 건도 없던 달에 배포가 3주 동안 멈췄다",
+      "category": "observability",
+      "date": "2026-08-01",
+      "day": 55,
+      "tags": [
+        "slo",
+        "error-budget",
+        "burn-rate",
+        "alerting",
+        "sre",
+        "reliability"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1889,6 +1905,30 @@
     {
       "from": "redis-acl",
       "to": "redis-lua-atomic"
+    },
+    {
+      "from": "error-budget",
+      "to": "blameless-postmortem"
+    },
+    {
+      "from": "error-budget",
+      "to": "chaos-engineering-intro"
+    },
+    {
+      "from": "error-budget",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "error-budget",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "error-budget",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "error-budget",
+      "to": "sli-slo-sla"
     }
   ]
 }
