@@ -827,6 +827,22 @@
         "reliability"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "outbox-pattern",
+      "title": "DB 커밋도 성공, 메시지 발행도 성공, 그런데 주문 37건이 사라졌다",
+      "category": "distributed",
+      "date": "2026-08-02",
+      "day": 56,
+      "tags": [
+        "outbox",
+        "dual-write",
+        "cdc",
+        "kafka",
+        "transaction",
+        "debezium"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1929,6 +1945,30 @@
     {
       "from": "error-budget",
       "to": "sli-slo-sla"
+    },
+    {
+      "from": "outbox-pattern",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "outbox-pattern",
+      "to": "cdc-debezium"
+    },
+    {
+      "from": "outbox-pattern",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "outbox-pattern",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "outbox-pattern",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "outbox-pattern",
+      "to": "saga-vs-2pc"
     }
   ]
 }
