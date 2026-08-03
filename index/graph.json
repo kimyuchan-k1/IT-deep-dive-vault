@@ -843,6 +843,22 @@
         "debezium"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "http2-vs-http3",
+      "title": "HTTP/2 멀티플렉싱은 Head-of-Line 블로킹을 없애지 못했다",
+      "category": "network",
+      "date": "2026-08-03",
+      "day": 57,
+      "tags": [
+        "http2",
+        "http3",
+        "quic",
+        "tcp",
+        "hol-blocking",
+        "udp"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -1969,6 +1985,26 @@
     {
       "from": "outbox-pattern",
       "to": "saga-vs-2pc"
+    },
+    {
+      "from": "http2-vs-http3",
+      "to": "cdn-cache-key"
+    },
+    {
+      "from": "http2-vs-http3",
+      "to": "dns-cache-ttl"
+    },
+    {
+      "from": "http2-vs-http3",
+      "to": "grpc-vs-rest"
+    },
+    {
+      "from": "http2-vs-http3",
+      "to": "tcp-slow-start"
+    },
+    {
+      "from": "http2-vs-http3",
+      "to": "tls13-zero-rtt"
     }
   ]
 }
