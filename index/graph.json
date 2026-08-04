@@ -859,6 +859,22 @@
         "udp"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "rate-limit-token-bucket",
+      "title": "1000 RPS로 제한을 걸었는데 백엔드에는 2000 RPS가 들어왔다",
+      "category": "security",
+      "date": "2026-08-04",
+      "day": 58,
+      "tags": [
+        "rate-limiting",
+        "token-bucket",
+        "leaky-bucket",
+        "gcra",
+        "redis",
+        "api-gateway"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2005,6 +2021,26 @@
     {
       "from": "http2-vs-http3",
       "to": "tls13-zero-rtt"
+    },
+    {
+      "from": "rate-limit-token-bucket",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "rate-limit-token-bucket",
+      "to": "bulkhead-pattern"
+    },
+    {
+      "from": "rate-limit-token-bucket",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "rate-limit-token-bucket",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "rate-limit-token-bucket",
+      "to": "retry-exponential-backoff-jitter"
     }
   ]
 }
