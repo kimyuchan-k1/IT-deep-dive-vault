@@ -875,6 +875,22 @@
         "api-gateway"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "cache-stampede",
+      "title": "캐시 히트율 99%인데 DB가 무너졌다",
+      "category": "redis",
+      "date": "2026-08-05",
+      "day": 59,
+      "tags": [
+        "cache-stampede",
+        "thundering-herd",
+        "xfetch",
+        "per",
+        "singleflight",
+        "stale-while-revalidate"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -2041,6 +2057,30 @@
     {
       "from": "rate-limit-token-bucket",
       "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "cache-stampede",
+      "to": "bulkhead-pattern"
+    },
+    {
+      "from": "cache-stampede",
+      "to": "cache-aside-vs-write-through"
+    },
+    {
+      "from": "cache-stampede",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "cache-stampede",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "cache-stampede",
+      "to": "redis-lua-atomic"
+    },
+    {
+      "from": "cache-stampede",
+      "to": "redis-ttl-eviction"
     }
   ]
 }
