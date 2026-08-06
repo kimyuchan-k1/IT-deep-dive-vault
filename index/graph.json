@@ -891,6 +891,22 @@
         "stale-while-revalidate"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "postgres-vacuum-bloat",
+      "title": "autovacuum은 매시간 돌았는데 테이블은 3배가 됐다",
+      "category": "db",
+      "date": "2026-08-06",
+      "day": 60,
+      "tags": [
+        "postgresql",
+        "vacuum",
+        "mvcc",
+        "bloat",
+        "autovacuum",
+        "xmin-horizon"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -2081,6 +2097,26 @@
     {
       "from": "cache-stampede",
       "to": "redis-ttl-eviction"
+    },
+    {
+      "from": "postgres-vacuum-bloat",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "postgres-vacuum-bloat",
+      "to": "lsm-tree-rocksdb"
+    },
+    {
+      "from": "postgres-vacuum-bloat",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "postgres-vacuum-bloat",
+      "to": "phantom-read-isolation"
+    },
+    {
+      "from": "postgres-vacuum-bloat",
+      "to": "wal-pitr"
     }
   ]
 }

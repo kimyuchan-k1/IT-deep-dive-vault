@@ -79,7 +79,7 @@
 | index-skip-scan-covering | Index Skip Scan과 Covering Index | 3 | **done (Day 36)** |
 | connection-pool-sizing | Connection Pool 사이즈 결정 공식 | 3 | **done (Day 48)** |
 | wal-pitr | WAL과 PITR | 3 | **done (Day 52)** |
-| postgres-vacuum-bloat | PostgreSQL VACUUM과 bloat | 4 | pending |
+| postgres-vacuum-bloat | PostgreSQL VACUUM과 bloat | 4 | **done (Day 60)** |
 | innodb-buffer-pool | MySQL InnoDB 버퍼풀 튜닝 | 4 | **done (Day 5)** |
 | replication-lag | Read Replica replication lag 다루기 | 3 | **done (Day 41)** |
 | sharding-strategies | Sharding 전략 (Range/Hash/Directory) | 3 | **done (Day 50)** |
@@ -154,7 +154,7 @@
 - A. 분산 시스템 이론: **11 / 15**
 - B. Redis / 캐시: **7 / 14**
 - C. 메시지 큐: **7 / 12**
-- D. 데이터베이스 내부: **10 / 15**
+- D. 데이터베이스 내부: **11 / 15**
 - E. 네트워크: **4 / 10**
 - F. 클라우드: **7 / 12**
 - G. 관측성: **6 / 10**
