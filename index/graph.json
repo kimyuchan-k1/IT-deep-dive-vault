@@ -907,6 +907,22 @@
         "xmin-horizon"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "eventual-vs-strong-consistency",
+      "title": "R+W > N을 맞췄는데 읽기가 옛 값을 돌려줬다",
+      "category": "distributed",
+      "date": "2026-08-07",
+      "day": 61,
+      "tags": [
+        "consistency",
+        "quorum",
+        "linearizability",
+        "replication",
+        "lww",
+        "pacelc"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -2117,6 +2133,30 @@
     {
       "from": "postgres-vacuum-bloat",
       "to": "wal-pitr"
+    },
+    {
+      "from": "eventual-vs-strong-consistency",
+      "to": "cap-theorem-real-meaning"
+    },
+    {
+      "from": "eventual-vs-strong-consistency",
+      "to": "crdt-intro"
+    },
+    {
+      "from": "eventual-vs-strong-consistency",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "eventual-vs-strong-consistency",
+      "to": "raft-easier-than-paxos"
+    },
+    {
+      "from": "eventual-vs-strong-consistency",
+      "to": "read-your-writes"
+    },
+    {
+      "from": "eventual-vs-strong-consistency",
+      "to": "replication-lag"
     }
   ]
 }

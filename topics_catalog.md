@@ -21,7 +21,7 @@
 | local-first-software | Local-First Software 아키텍처 | 4 | **done (Day 13)** |
 | lamport-vs-vector-clock | Lamport Clock vs Vector Clock | 4 | **done (Day 3)** |
 | quorum-rw-n | Quorum 합의 (R + W > N) | 3 | pending |
-| eventual-vs-strong-consistency | Eventual vs Strong Consistency 비용 | 3 | pending |
+| eventual-vs-strong-consistency | Eventual vs Strong Consistency 비용 | 3 | **done (Day 61)** |
 | read-your-writes | Read-your-writes / Monotonic Read | 3 | **done (Day 47)** |
 | redlock-debate | 분산 락 — Redlock 논쟁 | 4 | pending |
 | two-generals | Two Generals Problem이 시스템에 미치는 영향 | 3 | **done (Day 33)** |
@@ -151,7 +151,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **11 / 15**
+- A. 분산 시스템 이론: **12 / 15**
 - B. Redis / 캐시: **7 / 14**
 - C. 메시지 큐: **7 / 12**
 - D. 데이터베이스 내부: **11 / 15**
