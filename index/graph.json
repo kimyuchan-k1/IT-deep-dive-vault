@@ -923,6 +923,22 @@
         "pacelc"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "websocket-vs-sse-vs-polling",
+      "title": "SSE로 갈아탔더니 탭 7개째부터 실시간이 멈췄다",
+      "category": "network",
+      "date": "2026-08-08",
+      "day": 62,
+      "tags": [
+        "sse",
+        "websocket",
+        "long-polling",
+        "http2",
+        "eventsource",
+        "proxy"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2157,6 +2173,30 @@
     {
       "from": "eventual-vs-strong-consistency",
       "to": "replication-lag"
+    },
+    {
+      "from": "websocket-vs-sse-vs-polling",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "websocket-vs-sse-vs-polling",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "websocket-vs-sse-vs-polling",
+      "to": "http2-vs-http3"
+    },
+    {
+      "from": "websocket-vs-sse-vs-polling",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "websocket-vs-sse-vs-polling",
+      "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "websocket-vs-sse-vs-polling",
+      "to": "sse-prod-ops"
     }
   ]
 }
