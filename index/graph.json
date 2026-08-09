@@ -939,6 +939,22 @@
         "proxy"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "retry-exponential-backoff-jitter",
+      "title": "DB는 2초 만에 살아났는데 장애는 40분 더 갔다",
+      "category": "observability",
+      "date": "2026-08-09",
+      "day": 63,
+      "tags": [
+        "retry",
+        "backoff",
+        "jitter",
+        "thundering-herd",
+        "metastable-failure",
+        "resilience"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2197,6 +2213,30 @@
     {
       "from": "websocket-vs-sse-vs-polling",
       "to": "sse-prod-ops"
+    },
+    {
+      "from": "retry-exponential-backoff-jitter",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "retry-exponential-backoff-jitter",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "retry-exponential-backoff-jitter",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "retry-exponential-backoff-jitter",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "retry-exponential-backoff-jitter",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "retry-exponential-backoff-jitter",
+      "to": "rate-limit-token-bucket"
     }
   ]
 }

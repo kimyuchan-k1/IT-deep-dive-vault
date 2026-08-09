@@ -129,7 +129,7 @@
 | structured-logging | Structured Logging이 grep보다 나은 이유 | 2 | **done (Day 46)** |
 | circuit-breaker | Circuit Breaker 패턴 | 2 | **done (Day 40)** |
 | bulkhead-pattern | Bulkhead 패턴 | 3 | **done (Day 35)** |
-| retry-exponential-backoff-jitter | Retry + Exponential Backoff + Jitter | 2 | pending |
+| retry-exponential-backoff-jitter | Retry + Exponential Backoff + Jitter | 2 | **done (Day 63)** |
 | chaos-engineering-intro | Chaos Engineering 입문 | 3 | **done (Day 24)** |
 | blameless-postmortem | Postmortem 잘 쓰는 법 | 2 | pending |
 | error-budget | Error Budget로 배포 속도 결정 | 3 | **done (Day 55)** |
@@ -157,7 +157,7 @@
 - D. 데이터베이스 내부: **11 / 15**
 - E. 네트워크: **5 / 10**
 - F. 클라우드: **7 / 12**
-- G. 관측성: **6 / 10**
+- G. 관측성: **7 / 10**
 - H. 보안: **7 / 8**
 
 **총 94개. 약 3개월치.**
