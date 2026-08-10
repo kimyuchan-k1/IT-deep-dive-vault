@@ -955,6 +955,22 @@
         "resilience"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "cqrs-when-needed",
+      "title": "읽기 모델을 분리했더니 방금 낸 주문이 목록에서 사라졌다",
+      "category": "kafka",
+      "date": "2026-08-10",
+      "day": 64,
+      "tags": [
+        "cqrs",
+        "projection",
+        "read-model",
+        "eventual-consistency",
+        "event-driven",
+        "read-your-writes"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2237,6 +2253,26 @@
     {
       "from": "retry-exponential-backoff-jitter",
       "to": "rate-limit-token-bucket"
+    },
+    {
+      "from": "cqrs-when-needed",
+      "to": "cdc-debezium"
+    },
+    {
+      "from": "cqrs-when-needed",
+      "to": "event-sourcing-intro"
+    },
+    {
+      "from": "cqrs-when-needed",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "cqrs-when-needed",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "cqrs-when-needed",
+      "to": "outbox-pattern"
     }
   ]
 }
