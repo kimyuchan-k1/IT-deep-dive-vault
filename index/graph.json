@@ -971,6 +971,22 @@
         "read-your-writes"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "cache-aside-vs-write-through",
+      "title": "캐시를 지우는 데 성공했는데 옛 값이 3시간 동안 박혀 있었다",
+      "category": "redis",
+      "date": "2026-08-11",
+      "day": 65,
+      "tags": [
+        "cache-aside",
+        "write-through",
+        "write-behind",
+        "invalidation",
+        "lease",
+        "stale-read"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2273,6 +2289,26 @@
     {
       "from": "cqrs-when-needed",
       "to": "outbox-pattern"
+    },
+    {
+      "from": "cache-aside-vs-write-through",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "cache-aside-vs-write-through",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "cache-aside-vs-write-through",
+      "to": "lazy-freeing"
+    },
+    {
+      "from": "cache-aside-vs-write-through",
+      "to": "read-your-writes"
+    },
+    {
+      "from": "cache-aside-vs-write-through",
+      "to": "redis-ttl-eviction"
     }
   ]
 }

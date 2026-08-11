@@ -39,7 +39,7 @@
 | redis-sorted-set-queue | Redis Sorted Set으로 선착순 큐 | 3 | **done (Day 39)** |
 | redis-rdb-vs-aof | RDB vs AOF | 2 | **done (Day 25)** |
 | cache-stampede | Cache Stampede와 PER, XFetch | 4 | **done (Day 59)** |
-| cache-aside-vs-write-through | Cache-Aside vs Write-Through vs Write-Behind | 2 | pending |
+| cache-aside-vs-write-through | Cache-Aside vs Write-Through vs Write-Behind | 2 | **done (Day 65)** |
 | redis-cluster-slot | Redis Cluster의 hash slot 16384의 의미 | 3 | pending |
 | redis-pipelining-vs-tx | Pipelining vs Transaction (MULTI/EXEC) | 2 | **done (Day 44)** |
 | redis-lua-atomic | Redis Lua로 원자적 연산 | 3 | **done (Day 23)** |
@@ -152,7 +152,7 @@
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
 - A. 분산 시스템 이론: **12 / 15**
-- B. Redis / 캐시: **7 / 14**
+- B. Redis / 캐시: **8 / 14**
 - C. 메시지 큐: **8 / 12**
 - D. 데이터베이스 내부: **11 / 15**
 - E. 네트워크: **5 / 10**
