@@ -987,6 +987,22 @@
         "stale-read"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "blameless-postmortem",
+      "title": "\"원인은 오타 하나였다\"로 끝난 포스트모템은 6개월 뒤 같은 장애를 냈다",
+      "category": "observability",
+      "date": "2026-08-12",
+      "day": 66,
+      "tags": [
+        "postmortem",
+        "blameless",
+        "root-cause",
+        "hindsight-bias",
+        "incident-response",
+        "mttr"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -2309,6 +2325,34 @@
     {
       "from": "cache-aside-vs-write-through",
       "to": "redis-ttl-eviction"
+    },
+    {
+      "from": "blameless-postmortem",
+      "to": "chaos-engineering-intro"
+    },
+    {
+      "from": "blameless-postmortem",
+      "to": "circuit-breaker"
+    },
+    {
+      "from": "blameless-postmortem",
+      "to": "error-budget"
+    },
+    {
+      "from": "blameless-postmortem",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "blameless-postmortem",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "blameless-postmortem",
+      "to": "sli-slo-sla"
+    },
+    {
+      "from": "blameless-postmortem",
+      "to": "structured-logging"
     }
   ]
 }
