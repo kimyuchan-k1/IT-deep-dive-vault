@@ -1003,6 +1003,22 @@
         "mttr"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "redis-ttl-eviction",
+      "title": "만료 시각이 지났는데 키가 남아 있었고, 정작 세션이 축출됐다",
+      "category": "redis",
+      "date": "2026-08-13",
+      "day": 67,
+      "tags": [
+        "ttl",
+        "expiration",
+        "eviction",
+        "lru",
+        "lfu",
+        "maxmemory"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -2353,6 +2369,26 @@
     {
       "from": "blameless-postmortem",
       "to": "structured-logging"
+    },
+    {
+      "from": "redis-ttl-eviction",
+      "to": "cache-aside-vs-write-through"
+    },
+    {
+      "from": "redis-ttl-eviction",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "redis-ttl-eviction",
+      "to": "lazy-freeing"
+    },
+    {
+      "from": "redis-ttl-eviction",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-ttl-eviction",
+      "to": "redis-rdb-vs-aof"
     }
   ]
 }
