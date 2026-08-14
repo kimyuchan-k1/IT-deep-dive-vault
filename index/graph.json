@@ -1019,6 +1019,21 @@
         "maxmemory"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "redlock-debate",
+      "title": "락은 정상 동작했는데 두 워커가 같은 정산을 돌렸다",
+      "category": "distributed",
+      "date": "2026-08-14",
+      "day": 68,
+      "tags": [
+        "distributed-lock",
+        "redlock",
+        "fencing-token",
+        "gc-pause",
+        "consensus"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -2389,6 +2404,30 @@
     {
       "from": "redis-ttl-eviction",
       "to": "redis-rdb-vs-aof"
+    },
+    {
+      "from": "redlock-debate",
+      "to": "cap-theorem-real-meaning"
+    },
+    {
+      "from": "redlock-debate",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "redlock-debate",
+      "to": "quorum-rw-n"
+    },
+    {
+      "from": "redlock-debate",
+      "to": "raft-easier-than-paxos"
+    },
+    {
+      "from": "redlock-debate",
+      "to": "redis-lua-atomic"
+    },
+    {
+      "from": "redlock-debate",
+      "to": "two-generals"
     }
   ]
 }
