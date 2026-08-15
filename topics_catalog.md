@@ -48,7 +48,7 @@
 | redis-ttl-eviction | TTL과 LRU/LFU eviction | 2 | **done (Day 67)** |
 | redis-acl | Redis 6 ACL과 멀티테넌시 | 3 | **done (Day 54)** |
 | redis-hotkey | Redis HotKey 문제와 대응 | 3 | pending |
-| lazy-freeing | UNLINK / LAZY FREE 동작 원리 | 3 | pending |
+| lazy-freeing | UNLINK / LAZY FREE 동작 원리 | 3 | **done (Day 69)** |
 
 ## C. 메시지 큐 / 이벤트 드리븐
 
@@ -152,7 +152,7 @@
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
 - A. 분산 시스템 이론: **13 / 15**
-- B. Redis / 캐시: **9 / 14**
+- B. Redis / 캐시: **10 / 14**
 - C. 메시지 큐: **8 / 12**
 - D. 데이터베이스 내부: **11 / 15**
 - E. 네트워크: **5 / 10**

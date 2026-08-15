@@ -1034,6 +1034,22 @@
         "consensus"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "lazy-freeing",
+      "title": "UNLINK로 바꿨더니 삭제는 즉시 끝났고, 41초 뒤 프로세스가 죽었다",
+      "category": "redis",
+      "date": "2026-08-15",
+      "day": 69,
+      "tags": [
+        "unlink",
+        "lazyfree",
+        "del",
+        "memory",
+        "bio-thread",
+        "jemalloc"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2428,6 +2444,26 @@
     {
       "from": "redlock-debate",
       "to": "two-generals"
+    },
+    {
+      "from": "lazy-freeing",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "lazy-freeing",
+      "to": "redis-hotkey"
+    },
+    {
+      "from": "lazy-freeing",
+      "to": "redis-rdb-vs-aof"
+    },
+    {
+      "from": "lazy-freeing",
+      "to": "redis-scan-vs-keys"
+    },
+    {
+      "from": "lazy-freeing",
+      "to": "redis-ttl-eviction"
     }
   ]
 }
