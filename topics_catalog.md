@@ -114,7 +114,7 @@
 | aws-vpc-design | AWS VPC 디자인 — AZ 분리 | 3 | **done (Day 51)** |
 | spot-instance-safe | Spot Instance 안전하게 쓰는 법 | 3 | pending |
 | s3-consistency-evolution | S3 일관성 모델 변천사 | 3 | **done (Day 43)** |
-| observability-stack | CloudWatch vs Datadog vs Grafana | 2 | pending |
+| observability-stack | CloudWatch vs Datadog vs Grafana | 2 | **done (Day 70)** |
 | helm-vs-kustomize | Helm 차트 vs Kustomize | 2 | pending |
 | terraform-state | Terraform State 백업과 잠금 | 3 | **done (Day 26)** |
 | blue-green-canary-rolling | Blue/Green vs Canary vs Rolling | 2 | **done (Day 10)** |
@@ -156,7 +156,7 @@
 - C. 메시지 큐: **8 / 12**
 - D. 데이터베이스 내부: **11 / 15**
 - E. 네트워크: **5 / 10**
-- F. 클라우드: **7 / 12**
+- F. 클라우드: **8 / 12**
 - G. 관측성: **8 / 10**
 - H. 보안: **7 / 8**
 

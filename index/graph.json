@@ -1050,6 +1050,22 @@
         "jemalloc"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "observability-stack",
+      "title": "CloudWatch를 버리고 월 4,880달러를 아꼈고, 블랙프라이데이에 메트릭이 통째로 사라졌다",
+      "category": "cloud",
+      "date": "2026-08-16",
+      "day": 70,
+      "tags": [
+        "observability",
+        "cloudwatch",
+        "prometheus",
+        "datadog",
+        "cardinality",
+        "metrics"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -2464,6 +2480,26 @@
     {
       "from": "lazy-freeing",
       "to": "redis-ttl-eviction"
+    },
+    {
+      "from": "observability-stack",
+      "to": "distributed-tracing-otel"
+    },
+    {
+      "from": "observability-stack",
+      "to": "error-budget"
+    },
+    {
+      "from": "observability-stack",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "observability-stack",
+      "to": "sli-slo-sla"
+    },
+    {
+      "from": "observability-stack",
+      "to": "structured-logging"
     }
   ]
 }
