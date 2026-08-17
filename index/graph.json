@@ -1066,6 +1066,22 @@
         "metrics"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "sse-prod-ops",
+      "title": "SSE는 끊기면 알아서 다시 붙는다. 그래서 주문 2건이 조용히 사라졌다",
+      "category": "network",
+      "date": "2026-08-17",
+      "day": 71,
+      "tags": [
+        "sse",
+        "eventsource",
+        "http",
+        "streaming",
+        "nginx",
+        "alb"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2500,6 +2516,26 @@
     {
       "from": "observability-stack",
       "to": "structured-logging"
+    },
+    {
+      "from": "sse-prod-ops",
+      "to": "http2-vs-http3"
+    },
+    {
+      "from": "sse-prod-ops",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "sse-prod-ops",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "sse-prod-ops",
+      "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "sse-prod-ops",
+      "to": "websocket-vs-sse-vs-polling"
     }
   ]
 }
