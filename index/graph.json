@@ -1082,6 +1082,22 @@
         "alb"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "helm-vs-kustomize",
+      "title": "Kustomize 오버레이에서 리소스 한 줄을 지웠다. 3주 뒤 트래픽 30%가 구버전으로 갔다",
+      "category": "cloud",
+      "date": "2026-08-18",
+      "day": 72,
+      "tags": [
+        "helm",
+        "kustomize",
+        "kubectl-apply",
+        "server-side-apply",
+        "prune",
+        "crd"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2536,6 +2552,26 @@
     {
       "from": "sse-prod-ops",
       "to": "websocket-vs-sse-vs-polling"
+    },
+    {
+      "from": "helm-vs-kustomize",
+      "to": "blue-green-canary-rolling"
+    },
+    {
+      "from": "helm-vs-kustomize",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "helm-vs-kustomize",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "helm-vs-kustomize",
+      "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "helm-vs-kustomize",
+      "to": "terraform-state"
     }
   ]
 }
