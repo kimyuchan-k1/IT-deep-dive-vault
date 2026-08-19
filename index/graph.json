@@ -1098,6 +1098,22 @@
         "crd"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "event-sourcing-intro",
+      "title": "프로젝션 버그를 고치려고 이벤트를 재생했더니 결제 완료 메일 3만 통이 다시 나갔다",
+      "category": "kafka",
+      "date": "2026-08-19",
+      "day": 73,
+      "tags": [
+        "event-sourcing",
+        "replay",
+        "projection",
+        "upcasting",
+        "snapshot",
+        "cqrs"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2572,6 +2588,34 @@
     {
       "from": "helm-vs-kustomize",
       "to": "terraform-state"
+    },
+    {
+      "from": "event-sourcing-intro",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "event-sourcing-intro",
+      "to": "cdc-debezium"
+    },
+    {
+      "from": "event-sourcing-intro",
+      "to": "cqrs-when-needed"
+    },
+    {
+      "from": "event-sourcing-intro",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "event-sourcing-intro",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "event-sourcing-intro",
+      "to": "saga-orchestrator-vs-choreography"
+    },
+    {
+      "from": "event-sourcing-intro",
+      "to": "wal-pitr"
     }
   ]
 }
