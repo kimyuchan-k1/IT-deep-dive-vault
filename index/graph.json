@@ -1114,6 +1114,22 @@
         "cqrs"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "lsm-tree-rocksdb",
+      "title": "쓰기가 빠르다고 RocksDB를 골랐는데, 새벽 3시에 쓰기가 통째로 멈췄다",
+      "category": "db",
+      "date": "2026-08-21",
+      "day": 74,
+      "tags": [
+        "lsm-tree",
+        "rocksdb",
+        "compaction",
+        "write-stall",
+        "write-amplification",
+        "tombstone"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -2615,6 +2631,30 @@
     },
     {
       "from": "event-sourcing-intro",
+      "to": "wal-pitr"
+    },
+    {
+      "from": "lsm-tree-rocksdb",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "lsm-tree-rocksdb",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "lsm-tree-rocksdb",
+      "to": "innodb-buffer-pool"
+    },
+    {
+      "from": "lsm-tree-rocksdb",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "lsm-tree-rocksdb",
+      "to": "postgres-vacuum-bloat"
+    },
+    {
+      "from": "lsm-tree-rocksdb",
       "to": "wal-pitr"
     }
   ]

@@ -72,7 +72,7 @@
 | slug | 제목 | difficulty | status |
 |---|---|---|---|
 | btree-index-internals | B+Tree 인덱스 내부 구조 | 3 | **done (Day 2)** |
-| lsm-tree-rocksdb | LSM Tree와 RocksDB 동작 원리 | 4 | pending |
+| lsm-tree-rocksdb | LSM Tree와 RocksDB 동작 원리 | 4 | **done (Day 74)** |
 | mvcc-how | MVCC가 락을 어떻게 줄이나 | 3 | pending |
 | phantom-read-isolation | Phantom Read와 격리 수준 | 3 | pending |
 | hash-merge-nested-loop-join | Hash/Merge/Nested Loop Join | 3 | **done (Day 32)** |
@@ -154,7 +154,7 @@
 - A. 분산 시스템 이론: **13 / 15**
 - B. Redis / 캐시: **10 / 14**
 - C. 메시지 큐: **9 / 12**
-- D. 데이터베이스 내부: **11 / 15**
+- D. 데이터베이스 내부: **12 / 15**
 - E. 네트워크: **6 / 10**
 - F. 클라우드: **9 / 12**
 - G. 관측성: **8 / 10**
