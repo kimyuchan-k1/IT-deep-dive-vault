@@ -1130,6 +1130,22 @@
         "tombstone"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "spot-instance-safe",
+      "title": "Spot은 2분 전에 알려준다. 그래서 60대가 동시에 죽었을 때 아무 소용이 없었다",
+      "category": "cloud",
+      "date": "2026-08-22",
+      "day": 75,
+      "tags": [
+        "spot-instance",
+        "ec2",
+        "capacity-pool",
+        "karpenter",
+        "node-drain",
+        "autoscaling"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2656,6 +2672,26 @@
     {
       "from": "lsm-tree-rocksdb",
       "to": "wal-pitr"
+    },
+    {
+      "from": "spot-instance-safe",
+      "to": "blue-green-canary-rolling"
+    },
+    {
+      "from": "spot-instance-safe",
+      "to": "chaos-engineering-intro"
+    },
+    {
+      "from": "spot-instance-safe",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "spot-instance-safe",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "spot-instance-safe",
+      "to": "liveness-readiness-startup"
     }
   ]
 }
