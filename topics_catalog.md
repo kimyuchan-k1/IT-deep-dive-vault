@@ -144,7 +144,7 @@
 | rate-limit-token-bucket | Rate Limiting (Token vs Leaky Bucket) | 3 | **done (Day 58)** |
 | sqli-prepared-stmt | SQL Injection — Prepared Statement 한계 | 3 | **done (Day 20)** |
 | csrf-samesite | CSRF와 SameSite 쿠키 | 2 | **done (Day 8)** |
-| secret-management | Secret 관리 (Vault vs SSM) | 2 | pending |
+| secret-management | Secret 관리 (Vault vs SSM) | 2 | **done (Day 76)** |
 | rbac-abac-rebac | RBAC vs ABAC vs ReBAC | 3 | **done (Day 12)** |
 
 ---
@@ -158,6 +158,6 @@
 - E. 네트워크: **6 / 10**
 - F. 클라우드: **10 / 12**
 - G. 관측성: **8 / 10**
-- H. 보안: **7 / 8**
+- H. 보안: **8 / 8**
 
 **총 94개. 약 3개월치.**

@@ -1146,6 +1146,22 @@
         "autoscaling"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "secret-management",
+      "title": "비밀번호를 Vault로 옮겼다. 그런데 유출된 토큰은 6개월 전 그대로였다",
+      "category": "security",
+      "date": "2026-08-23",
+      "day": 76,
+      "tags": [
+        "secret-management",
+        "vault",
+        "aws-secrets-manager",
+        "parameter-store",
+        "rotation",
+        "dynamic-secrets"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -2692,6 +2708,26 @@
     {
       "from": "spot-instance-safe",
       "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "secret-management",
+      "to": "jwt-vs-session"
+    },
+    {
+      "from": "secret-management",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "secret-management",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "secret-management",
+      "to": "oauth2-grant-types"
+    },
+    {
+      "from": "secret-management",
+      "to": "rbac-abac-rebac"
     }
   ]
 }
