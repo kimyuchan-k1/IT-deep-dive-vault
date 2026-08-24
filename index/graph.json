@@ -1162,6 +1162,22 @@
         "dynamic-secrets"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "phantom-read-isolation",
+      "title": "격리 수준을 REPEATABLE READ로 올렸다. 정원 20명 강의에 23명이 등록됐다",
+      "category": "db",
+      "date": "2026-08-24",
+      "day": 77,
+      "tags": [
+        "isolation-level",
+        "phantom-read",
+        "mvcc",
+        "write-skew",
+        "serializable",
+        "gap-lock"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2728,6 +2744,26 @@
     {
       "from": "secret-management",
       "to": "rbac-abac-rebac"
+    },
+    {
+      "from": "phantom-read-isolation",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "phantom-read-isolation",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "phantom-read-isolation",
+      "to": "innodb-buffer-pool"
+    },
+    {
+      "from": "phantom-read-isolation",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "phantom-read-isolation",
+      "to": "postgres-vacuum-bloat"
     }
   ]
 }
