@@ -1178,6 +1178,22 @@
         "gap-lock"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "sli-slo-sla",
+      "title": "대시보드는 99.98%였다. 그 달에 고객은 30분 동안 결제를 못 했다",
+      "category": "observability",
+      "date": "2026-08-27",
+      "day": 78,
+      "tags": [
+        "sli",
+        "slo",
+        "sla",
+        "availability",
+        "reliability",
+        "sre"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -2764,6 +2780,30 @@
     {
       "from": "phantom-read-isolation",
       "to": "postgres-vacuum-bloat"
+    },
+    {
+      "from": "sli-slo-sla",
+      "to": "blameless-postmortem"
+    },
+    {
+      "from": "sli-slo-sla",
+      "to": "distributed-tracing-otel"
+    },
+    {
+      "from": "sli-slo-sla",
+      "to": "error-budget"
+    },
+    {
+      "from": "sli-slo-sla",
+      "to": "observability-stack"
+    },
+    {
+      "from": "sli-slo-sla",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "sli-slo-sla",
+      "to": "structured-logging"
     }
   ]
 }
