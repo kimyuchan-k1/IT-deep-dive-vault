@@ -1194,6 +1194,21 @@
         "sre"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "paxos-5min",
+      "title": "과반이 동의했으니 확정이라고 믿었다. 같은 슬롯에 값이 두 번 확정됐다",
+      "category": "distributed",
+      "date": "2026-08-28",
+      "day": 79,
+      "tags": [
+        "paxos",
+        "consensus",
+        "quorum",
+        "distributed",
+        "safety"
+      ],
+      "difficulty": 5
     }
   ],
   "edges": [
@@ -2804,6 +2819,26 @@
     {
       "from": "sli-slo-sla",
       "to": "structured-logging"
+    },
+    {
+      "from": "paxos-5min",
+      "to": "cap-theorem-real-meaning"
+    },
+    {
+      "from": "paxos-5min",
+      "to": "quorum-rw-n"
+    },
+    {
+      "from": "paxos-5min",
+      "to": "raft-easier-than-paxos"
+    },
+    {
+      "from": "paxos-5min",
+      "to": "redlock-debate"
+    },
+    {
+      "from": "paxos-5min",
+      "to": "two-generals"
     }
   ]
 }
