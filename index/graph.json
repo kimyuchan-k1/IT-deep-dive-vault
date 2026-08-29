@@ -1209,6 +1209,21 @@
         "safety"
       ],
       "difficulty": 5
+    },
+    {
+      "slug": "redis-hotkey",
+      "title": "샤드를 6개에서 12개로 늘렸다. 그런데 더 느려졌다",
+      "category": "redis",
+      "date": "2026-08-29",
+      "day": 80,
+      "tags": [
+        "redis",
+        "hotkey",
+        "cluster",
+        "cache",
+        "bandwidth"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2839,6 +2854,34 @@
     {
       "from": "paxos-5min",
       "to": "two-generals"
+    },
+    {
+      "from": "redis-hotkey",
+      "to": "cache-aside-vs-write-through"
+    },
+    {
+      "from": "redis-hotkey",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "redis-hotkey",
+      "to": "read-your-writes"
+    },
+    {
+      "from": "redis-hotkey",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-hotkey",
+      "to": "redis-cluster-slot"
+    },
+    {
+      "from": "redis-hotkey",
+      "to": "redis-ttl-eviction"
+    },
+    {
+      "from": "redis-hotkey",
+      "to": "retry-exponential-backoff-jitter"
     }
   ]
 }
