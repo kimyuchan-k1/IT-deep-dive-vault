@@ -1224,6 +1224,20 @@
         "bandwidth"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "http-idempotency",
+      "title": "DELETE는 멱등이라 재시도해도 안전한 줄 알았다. 쿠폰 재고가 두 번 깎였다",
+      "category": "network",
+      "date": "2026-08-30",
+      "day": 81,
+      "tags": [
+        "http",
+        "idempotency",
+        "retry",
+        "rfc9110"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -2882,6 +2896,26 @@
     {
       "from": "redis-hotkey",
       "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "http-idempotency",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "http-idempotency",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "http-idempotency",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "http-idempotency",
+      "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "http-idempotency",
+      "to": "upsert-idempotency"
     }
   ]
 }
