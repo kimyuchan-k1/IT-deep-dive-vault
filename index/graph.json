@@ -1238,6 +1238,21 @@
         "rfc9110"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "quorum-rw-n",
+      "title": "R+W > N으로 맞춰놨다. 그런데 배송 상태가 과거로 되돌아갔다",
+      "category": "distributed",
+      "date": "2026-08-31",
+      "day": 82,
+      "tags": [
+        "quorum",
+        "dynamo",
+        "cassandra",
+        "consistency",
+        "clock-skew"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2916,6 +2931,22 @@
     {
       "from": "http-idempotency",
       "to": "upsert-idempotency"
+    },
+    {
+      "from": "quorum-rw-n",
+      "to": "cap-theorem-real-meaning"
+    },
+    {
+      "from": "quorum-rw-n",
+      "to": "merkle-tree-anti-entropy"
+    },
+    {
+      "from": "quorum-rw-n",
+      "to": "paxos-5min"
+    },
+    {
+      "from": "quorum-rw-n",
+      "to": "vector-clock"
     }
   ]
 }

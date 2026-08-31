@@ -20,7 +20,7 @@
 | saga-vs-2pc | Saga 패턴 vs 2PC | 3 | **done (Day 31)** |
 | local-first-software | Local-First Software 아키텍처 | 4 | **done (Day 13)** |
 | lamport-vs-vector-clock | Lamport Clock vs Vector Clock | 4 | **done (Day 3)** |
-| quorum-rw-n | Quorum 합의 (R + W > N) | 3 | pending |
+| quorum-rw-n | Quorum 합의 (R + W > N) | 3 | **done (Day 82)** |
 | eventual-vs-strong-consistency | Eventual vs Strong Consistency 비용 | 3 | **done (Day 61)** |
 | read-your-writes | Read-your-writes / Monotonic Read | 3 | **done (Day 47)** |
 | redlock-debate | 분산 락 — Redlock 논쟁 | 4 | **done (Day 68)** |
@@ -151,7 +151,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **14 / 15**
+- A. 분산 시스템 이론: **15 / 15**
 - B. Redis / 캐시: **11 / 14**
 - C. 메시지 큐: **9 / 12**
 - D. 데이터베이스 내부: **13 / 15**
