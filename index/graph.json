@@ -1253,6 +1253,21 @@
         "clock-skew"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "redis-cluster-slot",
+      "title": "노드를 6대에서 12대로 늘렸다. 그런데 한 대만 CPU 100%였다",
+      "category": "redis",
+      "date": "2026-09-01",
+      "day": 83,
+      "tags": [
+        "redis-cluster",
+        "hash-slot",
+        "hash-tag",
+        "resharding",
+        "crc16"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -2947,6 +2962,34 @@
     {
       "from": "quorum-rw-n",
       "to": "vector-clock"
+    },
+    {
+      "from": "redis-cluster-slot",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "redis-cluster-slot",
+      "to": "consistent-hashing"
+    },
+    {
+      "from": "redis-cluster-slot",
+      "to": "lazy-freeing"
+    },
+    {
+      "from": "redis-cluster-slot",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-cluster-slot",
+      "to": "redis-hotkey"
+    },
+    {
+      "from": "redis-cluster-slot",
+      "to": "redis-pipelining-vs-tx"
+    },
+    {
+      "from": "redis-cluster-slot",
+      "to": "sharding-strategies"
     }
   ]
 }
