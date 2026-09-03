@@ -1283,6 +1283,21 @@
         "retry-amplification"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "mvcc-how",
+      "title": "읽기는 락을 안 걸어서 공짜인 줄 알았다. 리포트 배치 하나가 테이블을 4배로 불렸다",
+      "category": "db",
+      "date": "2026-09-03",
+      "day": 85,
+      "tags": [
+        "mvcc",
+        "postgresql",
+        "innodb",
+        "vacuum",
+        "snapshot-isolation"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3037,6 +3052,34 @@
     {
       "from": "service-mesh-istio",
       "to": "sidecar-tradeoff"
+    },
+    {
+      "from": "mvcc-how",
+      "to": "btree-index-internals"
+    },
+    {
+      "from": "mvcc-how",
+      "to": "innodb-buffer-pool"
+    },
+    {
+      "from": "mvcc-how",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "mvcc-how",
+      "to": "phantom-read-isolation"
+    },
+    {
+      "from": "mvcc-how",
+      "to": "postgres-vacuum-bloat"
+    },
+    {
+      "from": "mvcc-how",
+      "to": "replication-lag"
+    },
+    {
+      "from": "mvcc-how",
+      "to": "wal-pitr"
     }
   ]
 }
