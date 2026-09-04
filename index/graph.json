@@ -1298,6 +1298,21 @@
         "snapshot-isolation"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "percentile-p99",
+      "title": "p99가 200ms였다. 그런데 유저는 2초를 기다렸다",
+      "category": "observability",
+      "date": "2026-09-04",
+      "day": 86,
+      "tags": [
+        "percentile",
+        "latency",
+        "histogram",
+        "prometheus",
+        "tail-latency"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3080,6 +3095,30 @@
     {
       "from": "mvcc-how",
       "to": "wal-pitr"
+    },
+    {
+      "from": "percentile-p99",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "percentile-p99",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "percentile-p99",
+      "to": "distributed-tracing-otel"
+    },
+    {
+      "from": "percentile-p99",
+      "to": "error-budget"
+    },
+    {
+      "from": "percentile-p99",
+      "to": "observability-stack"
+    },
+    {
+      "from": "percentile-p99",
+      "to": "sli-slo-sla"
     }
   ]
 }
