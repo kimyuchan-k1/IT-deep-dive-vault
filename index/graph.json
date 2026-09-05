@@ -1313,6 +1313,21 @@
         "tail-latency"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "kafka-connect-schema-registry",
+      "title": "스키마 호환성을 BACKWARD로 켜뒀다. 컨슈머가 전부 죽었다",
+      "category": "kafka",
+      "date": "2026-09-05",
+      "day": 87,
+      "tags": [
+        "kafka",
+        "schema-registry",
+        "avro",
+        "kafka-connect",
+        "schema-evolution"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3119,6 +3134,26 @@
     {
       "from": "percentile-p99",
       "to": "sli-slo-sla"
+    },
+    {
+      "from": "kafka-connect-schema-registry",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "kafka-connect-schema-registry",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "kafka-connect-schema-registry",
+      "to": "event-sourcing-intro"
+    },
+    {
+      "from": "kafka-connect-schema-registry",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "kafka-connect-schema-registry",
+      "to": "kafka-partition-math"
     }
   ]
 }

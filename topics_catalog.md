@@ -63,7 +63,7 @@
 | event-sourcing-intro | Event Sourcing 입문 | 3 | **done (Day 73)** |
 | cqrs-when-needed | CQRS는 언제 진짜 필요한가 | 3 | **done (Day 64)** |
 | saga-orchestrator-vs-choreography | Saga Orchestrator vs Choreography | 3 | **done (Day 7)** |
-| kafka-connect-schema-registry | Kafka Connect / Schema Registry | 3 | pending |
+| kafka-connect-schema-registry | Kafka Connect / Schema Registry | 3 | **done (Day 87)** |
 | sqs-vs-sns-vs-eventbridge | SQS vs SNS vs EventBridge | 2 | **done (Day 17)** |
 | pull-vs-push-model | Pull vs Push 모델 | 2 | **done (Day 19)** |
 
@@ -153,7 +153,7 @@
 
 - A. 분산 시스템 이론: **15 / 15**
 - B. Redis / 캐시: **12 / 14**
-- C. 메시지 큐: **9 / 12**
+- C. 메시지 큐: **10 / 12**
 - D. 데이터베이스 내부: **14 / 15**
 - E. 네트워크: **7 / 10**
 - F. 클라우드: **11 / 12**
