@@ -1328,6 +1328,21 @@
         "schema-evolution"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "upsert-idempotency",
+      "title": "UPSERT를 걸어놨는데 재시도 한 번에 잔액이 두 배가 됐다",
+      "category": "db",
+      "date": "2026-09-06",
+      "day": 88,
+      "tags": [
+        "postgres",
+        "mysql",
+        "upsert",
+        "idempotency",
+        "transaction"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3154,6 +3169,30 @@
     {
       "from": "kafka-connect-schema-registry",
       "to": "kafka-partition-math"
+    },
+    {
+      "from": "upsert-idempotency",
+      "to": "http-idempotency"
+    },
+    {
+      "from": "upsert-idempotency",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "upsert-idempotency",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "upsert-idempotency",
+      "to": "outbox-pattern"
+    },
+    {
+      "from": "upsert-idempotency",
+      "to": "phantom-read-isolation"
+    },
+    {
+      "from": "upsert-idempotency",
+      "to": "postgres-vacuum-bloat"
     }
   ]
 }
