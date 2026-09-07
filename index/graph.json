@@ -1343,6 +1343,21 @@
         "transaction"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "redis-scan-vs-keys",
+      "title": "KEYS를 SCAN으로 바꿨다. Redis는 더 오래 멈췄다",
+      "category": "redis",
+      "date": "2026-09-07",
+      "day": 89,
+      "tags": [
+        "redis",
+        "scan",
+        "keys",
+        "cursor",
+        "rehash"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3193,6 +3208,22 @@
     {
       "from": "upsert-idempotency",
       "to": "postgres-vacuum-bloat"
+    },
+    {
+      "from": "redis-scan-vs-keys",
+      "to": "lazy-freeing"
+    },
+    {
+      "from": "redis-scan-vs-keys",
+      "to": "redis-bigkey"
+    },
+    {
+      "from": "redis-scan-vs-keys",
+      "to": "redis-cluster-slot"
+    },
+    {
+      "from": "redis-scan-vs-keys",
+      "to": "redis-hotkey"
     }
   ]
 }
