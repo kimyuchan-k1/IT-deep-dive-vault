@@ -106,7 +106,7 @@
 
 | slug | 제목 | difficulty | status |
 |---|---|---|---|
-| k8s-pod-death-5-reasons | Kubernetes Pod이 죽는 흔한 5가지 이유 | 2 | pending |
+| k8s-pod-death-5-reasons | Kubernetes Pod이 죽는 흔한 5가지 이유 | 2 | **done (Day 90)** |
 | liveness-readiness-startup | Liveness/Readiness/Startup Probe | 2 | **done (Day 15)** |
 | hpa-internals | HPA의 진짜 동작 | 3 | **done (Day 18)** |
 | service-mesh-istio | Service Mesh가 풀어주는 것 | 3 | **done (Day 84)** |
@@ -156,7 +156,7 @@
 - C. 메시지 큐: **10 / 12**
 - D. 데이터베이스 내부: **15 / 15**
 - E. 네트워크: **7 / 10**
-- F. 클라우드: **11 / 12**
+- F. 클라우드: **12 / 12**
 - G. 관측성: **10 / 10**
 - H. 보안: **8 / 8**
 

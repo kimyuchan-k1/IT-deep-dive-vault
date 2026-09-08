@@ -1358,6 +1358,21 @@
         "rehash"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "k8s-pod-death-5-reasons",
+      "title": "메모리를 절반만 썼는데 Pod이 OOMKilled로 죽었다",
+      "category": "cloud",
+      "date": "2026-09-08",
+      "day": 90,
+      "tags": [
+        "kubernetes",
+        "cgroup",
+        "oomkilled",
+        "eviction",
+        "memory"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3224,6 +3239,26 @@
     {
       "from": "redis-scan-vs-keys",
       "to": "redis-hotkey"
+    },
+    {
+      "from": "k8s-pod-death-5-reasons",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "k8s-pod-death-5-reasons",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "k8s-pod-death-5-reasons",
+      "to": "liveness-readiness-startup"
+    },
+    {
+      "from": "k8s-pod-death-5-reasons",
+      "to": "sidecar-tradeoff"
+    },
+    {
+      "from": "k8s-pod-death-5-reasons",
+      "to": "spot-instance-safe"
     }
   ]
 }
