@@ -91,7 +91,7 @@
 
 | slug | 제목 | difficulty | status |
 |---|---|---|---|
-| tcp-slow-start | TCP Slow Start와 Congestion Window | 3 | pending |
+| tcp-slow-start | TCP Slow Start와 Congestion Window | 3 | **done (Day 91)** |
 | http2-vs-http3 | HTTP/2 vs HTTP/3 (QUIC) | 3 | **done (Day 57)** |
 | websocket-vs-sse-vs-polling | WebSocket vs SSE vs Long Polling | 2 | **done (Day 62)** |
 | tls13-zero-rtt | TLS 1.3 handshake 0-RTT | 4 | pending |
@@ -155,7 +155,7 @@
 - B. Redis / 캐시: **13 / 14**
 - C. 메시지 큐: **10 / 12**
 - D. 데이터베이스 내부: **15 / 15**
-- E. 네트워크: **7 / 10**
+- E. 네트워크: **8 / 10**
 - F. 클라우드: **12 / 12**
 - G. 관측성: **10 / 10**
 - H. 보안: **8 / 8**

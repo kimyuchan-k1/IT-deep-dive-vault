@@ -1373,6 +1373,21 @@
         "memory"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "tcp-slow-start",
+      "title": "대역폭을 10배 올렸다. 응답 시간은 1ms도 줄지 않았다",
+      "category": "network",
+      "date": "2026-09-09",
+      "day": 91,
+      "tags": [
+        "tcp",
+        "congestion-control",
+        "slow-start",
+        "cwnd",
+        "latency"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3259,6 +3274,26 @@
     {
       "from": "k8s-pod-death-5-reasons",
       "to": "spot-instance-safe"
+    },
+    {
+      "from": "tcp-slow-start",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "tcp-slow-start",
+      "to": "cdn-cache-key"
+    },
+    {
+      "from": "tcp-slow-start",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "tcp-slow-start",
+      "to": "http2-vs-http3"
+    },
+    {
+      "from": "tcp-slow-start",
+      "to": "tls13-zero-rtt"
     }
   ]
 }
