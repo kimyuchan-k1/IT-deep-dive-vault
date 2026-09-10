@@ -1388,6 +1388,21 @@
         "latency"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "redis-streams-vs-kafka",
+      "title": "컨슈머 한 대가 죽었다. Kafka는 알아서 넘겼고 Redis Streams는 1만 건을 붙잡고 있었다",
+      "category": "redis",
+      "date": "2026-09-10",
+      "day": 92,
+      "tags": [
+        "redis-streams",
+        "kafka",
+        "consumer-group",
+        "pel",
+        "xautoclaim"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3294,6 +3309,26 @@
     {
       "from": "tcp-slow-start",
       "to": "tls13-zero-rtt"
+    },
+    {
+      "from": "redis-streams-vs-kafka",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "redis-streams-vs-kafka",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "redis-streams-vs-kafka",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "redis-streams-vs-kafka",
+      "to": "redis-rdb-vs-aof"
+    },
+    {
+      "from": "redis-streams-vs-kafka",
+      "to": "redis-sorted-set-queue"
     }
   ]
 }
