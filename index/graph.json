@@ -1403,6 +1403,21 @@
         "xautoclaim"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "grpc-vs-rest",
+      "title": "REST를 gRPC로 바꿨다. 파드 12개 중 3개만 일했다",
+      "category": "network",
+      "date": "2026-09-11",
+      "day": 93,
+      "tags": [
+        "grpc",
+        "http2",
+        "protobuf",
+        "load-balancing",
+        "kubernetes"
+      ],
+      "difficulty": 2
     }
   ],
   "edges": [
@@ -3329,6 +3344,26 @@
     {
       "from": "redis-streams-vs-kafka",
       "to": "redis-sorted-set-queue"
+    },
+    {
+      "from": "grpc-vs-rest",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "grpc-vs-rest",
+      "to": "http2-vs-http3"
+    },
+    {
+      "from": "grpc-vs-rest",
+      "to": "reverse-proxy-l4-l7"
+    },
+    {
+      "from": "grpc-vs-rest",
+      "to": "service-mesh-istio"
+    },
+    {
+      "from": "grpc-vs-rest",
+      "to": "tcp-slow-start"
     }
   ]
 }

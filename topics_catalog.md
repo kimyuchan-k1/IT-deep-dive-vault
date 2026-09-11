@@ -96,7 +96,7 @@
 | websocket-vs-sse-vs-polling | WebSocket vs SSE vs Long Polling | 2 | **done (Day 62)** |
 | tls13-zero-rtt | TLS 1.3 handshake 0-RTT | 4 | pending |
 | dns-cache-ttl | DNS 캐시와 TTL 튜닝 | 2 | **done (Day 14)** |
-| grpc-vs-rest | gRPC가 REST보다 빠른 진짜 이유 | 2 | pending |
+| grpc-vs-rest | gRPC가 REST보다 빠른 진짜 이유 | 2 | **done (Day 93)** |
 | cdn-cache-key | CDN 캐시 키 설계 | 3 | **done (Day 27)** |
 | reverse-proxy-l4-l7 | Reverse Proxy와 L4/L7 LB | 2 | **done (Day 34)** |
 | http-idempotency | Idempotency를 위한 HTTP 메서드 설계 | 2 | **done (Day 81)** |
@@ -155,7 +155,7 @@
 - B. Redis / 캐시: **14 / 14**
 - C. 메시지 큐: **10 / 12**
 - D. 데이터베이스 내부: **15 / 15**
-- E. 네트워크: **8 / 10**
+- E. 네트워크: **9 / 10**
 - F. 클라우드: **12 / 12**
 - G. 관측성: **10 / 10**
 - H. 보안: **8 / 8**
