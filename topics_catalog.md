@@ -94,7 +94,7 @@
 | tcp-slow-start | TCP Slow Start와 Congestion Window | 3 | **done (Day 91)** |
 | http2-vs-http3 | HTTP/2 vs HTTP/3 (QUIC) | 3 | **done (Day 57)** |
 | websocket-vs-sse-vs-polling | WebSocket vs SSE vs Long Polling | 2 | **done (Day 62)** |
-| tls13-zero-rtt | TLS 1.3 handshake 0-RTT | 4 | pending |
+| tls13-zero-rtt | TLS 1.3 handshake 0-RTT | 4 | **done (Day 94)** |
 | dns-cache-ttl | DNS 캐시와 TTL 튜닝 | 2 | **done (Day 14)** |
 | grpc-vs-rest | gRPC가 REST보다 빠른 진짜 이유 | 2 | **done (Day 93)** |
 | cdn-cache-key | CDN 캐시 키 설계 | 3 | **done (Day 27)** |
@@ -155,7 +155,7 @@
 - B. Redis / 캐시: **14 / 14**
 - C. 메시지 큐: **10 / 12**
 - D. 데이터베이스 내부: **15 / 15**
-- E. 네트워크: **9 / 10**
+- E. 네트워크: **10 / 10**
 - F. 클라우드: **12 / 12**
 - G. 관측성: **10 / 10**
 - H. 보안: **8 / 8**

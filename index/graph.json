@@ -1418,6 +1418,21 @@
         "kubernetes"
       ],
       "difficulty": 2
+    },
+    {
+      "slug": "tls13-zero-rtt",
+      "title": "왕복 한 번을 아꼈다. 결제가 두 번 찍혔다",
+      "category": "network",
+      "date": "2026-09-13",
+      "day": 94,
+      "tags": [
+        "tls",
+        "0-rtt",
+        "replay-attack",
+        "handshake",
+        "forward-secrecy"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -3363,6 +3378,26 @@
     },
     {
       "from": "grpc-vs-rest",
+      "to": "tcp-slow-start"
+    },
+    {
+      "from": "tls13-zero-rtt",
+      "to": "http-idempotency"
+    },
+    {
+      "from": "tls13-zero-rtt",
+      "to": "http2-vs-http3"
+    },
+    {
+      "from": "tls13-zero-rtt",
+      "to": "idempotency-key"
+    },
+    {
+      "from": "tls13-zero-rtt",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "tls13-zero-rtt",
       "to": "tcp-slow-start"
     }
   ]
