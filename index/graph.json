@@ -1433,6 +1433,21 @@
         "forward-secrecy"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "rabbitmq-vs-kafka",
+      "title": "RabbitMQ에선 한 건만 다시 처리됐다. Kafka로 옮기자 뒤의 8만 건이 멈췄다",
+      "category": "kafka",
+      "date": "2026-09-14",
+      "day": 95,
+      "tags": [
+        "rabbitmq",
+        "kafka",
+        "amqp",
+        "partition",
+        "ack"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3399,6 +3414,26 @@
     {
       "from": "tls13-zero-rtt",
       "to": "tcp-slow-start"
+    },
+    {
+      "from": "rabbitmq-vs-kafka",
+      "to": "at-least-once-vs-at-most-once"
+    },
+    {
+      "from": "rabbitmq-vs-kafka",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "rabbitmq-vs-kafka",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "rabbitmq-vs-kafka",
+      "to": "kafka-partition-math"
+    },
+    {
+      "from": "rabbitmq-vs-kafka",
+      "to": "pull-vs-push-model"
     }
   ]
 }

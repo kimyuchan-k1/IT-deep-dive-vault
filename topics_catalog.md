@@ -58,7 +58,7 @@
 | kafka-exactly-once | Kafka Exactly-Once의 진짜 동작 | 4 | **done (Day 4)** |
 | dead-letter-queue | Dead Letter Queue 패턴 | 2 | **done (Day 37)** |
 | at-least-once-vs-at-most-once | At-least-once vs At-most-once | 2 | **done (Day 29)** |
-| rabbitmq-vs-kafka | RabbitMQ vs Kafka 결정 트리 | 3 | pending |
+| rabbitmq-vs-kafka | RabbitMQ vs Kafka 결정 트리 | 3 | **done (Day 95)** |
 | backpressure-patterns | Backpressure 4가지 패턴 | 4 | **done (Day 49)** |
 | event-sourcing-intro | Event Sourcing 입문 | 3 | **done (Day 73)** |
 | cqrs-when-needed | CQRS는 언제 진짜 필요한가 | 3 | **done (Day 64)** |
@@ -153,11 +153,11 @@
 
 - A. 분산 시스템 이론: **15 / 15**
 - B. Redis / 캐시: **14 / 14**
-- C. 메시지 큐: **10 / 12**
+- C. 메시지 큐: **11 / 12**
 - D. 데이터베이스 내부: **15 / 15**
 - E. 네트워크: **10 / 10**
 - F. 클라우드: **12 / 12**
 - G. 관측성: **10 / 10**
 - H. 보안: **8 / 8**
 
-**총 94개. 약 3개월치.**
+**총 95개. 약 3개월치.**
