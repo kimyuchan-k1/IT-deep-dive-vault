@@ -1448,6 +1448,21 @@
         "ack"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "kafka-partition-math",
+      "title": "파티션을 12개에서 200개로 늘렸다. 처리량은 그대로였고 p99만 3배가 됐다",
+      "category": "kafka",
+      "date": "2026-09-15",
+      "day": 96,
+      "tags": [
+        "kafka",
+        "partition",
+        "consumer-group",
+        "throughput",
+        "rebalance"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3434,6 +3449,30 @@
     {
       "from": "rabbitmq-vs-kafka",
       "to": "pull-vs-push-model"
+    },
+    {
+      "from": "kafka-partition-math",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "kafka-partition-math",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "kafka-partition-math",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "kafka-partition-math",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "kafka-partition-math",
+      "to": "rabbitmq-vs-kafka"
+    },
+    {
+      "from": "kafka-partition-math",
+      "to": "sharding-strategies"
     }
   ]
 }
