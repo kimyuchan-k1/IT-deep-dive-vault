@@ -30,6 +30,8 @@
 | idempotency-key | Idempotency Key 설계 | 2 | **done (Day 45)** |
 | outbox-pattern | 분산 트랜잭션 — Outbox 패턴 | 3 | **done (Day 56)** |
 | cdc-debezium | CDC와 Debezium | 3 | **done (Day 11)** |
+| gossip-protocol-antientropy | Gossip 프로토콜과 anti-entropy 확산 | 4 | pending |
+| consistent-hashing-vnode | Consistent Hashing과 가상 노드 | 3 | pending |
 
 ## B. Redis / 캐시
 
@@ -49,6 +51,8 @@
 | redis-acl | Redis 6 ACL과 멀티테넌시 | 3 | **done (Day 54)** |
 | redis-hotkey | Redis HotKey 문제와 대응 | 3 | **done (Day 80)** |
 | lazy-freeing | UNLINK / LAZY FREE 동작 원리 | 3 | **done (Day 69)** |
+| redis-memory-fragmentation | Redis 메모리 단편화와 jemalloc | 4 | pending |
+| negative-caching | 없는 키를 캐싱하기 (negative cache) | 3 | pending |
 
 ## C. 메시지 큐 / 이벤트 드리븐
 
@@ -66,6 +70,8 @@
 | kafka-connect-schema-registry | Kafka Connect / Schema Registry | 3 | **done (Day 87)** |
 | sqs-vs-sns-vs-eventbridge | SQS vs SNS vs EventBridge | 2 | **done (Day 17)** |
 | pull-vs-push-model | Pull vs Push 모델 | 2 | **done (Day 19)** |
+| kafka-isr-min-insync | Kafka ISR과 min.insync.replicas | 4 | pending |
+| consumer-lag-monitoring | 컨슈머 랙 측정의 함정 | 3 | pending |
 
 ## D. 데이터베이스 내부
 
@@ -86,6 +92,8 @@
 | upsert-idempotency | UPSERT 패턴과 멱등성 | 2 | **done (Day 88)** |
 | materialized-view | Materialized View vs 캐시 테이블 | 2 | **done (Day 9)** |
 | hyperloglog-approx-counting | 어림 카운팅 (HyperLogLog) | 3 | **done (Day 38)** |
+| query-planner-statistics | 옵티마이저 통계가 틀리면 벌어지는 일 | 4 | pending |
+| deadlock-detection | 데드락 탐지와 락 획득 순서 | 3 | pending |
 
 ## E. 네트워크 / 프로토콜
 
@@ -101,6 +109,8 @@
 | reverse-proxy-l4-l7 | Reverse Proxy와 L4/L7 LB | 2 | **done (Day 34)** |
 | http-idempotency | Idempotency를 위한 HTTP 메서드 설계 | 2 | **done (Day 81)** |
 | sse-prod-ops | Server-Sent Events 실전 운영 | 3 | **done (Day 71)** |
+| nagle-delayed-ack | Nagle 알고리즘과 Delayed ACK 충돌 | 4 | pending |
+| keepalive-timeout-mismatch | Keep-Alive 타임아웃 불일치와 502 | 3 | pending |
 
 ## F. 클라우드 / 인프라
 
@@ -118,6 +128,8 @@
 | helm-vs-kustomize | Helm 차트 vs Kustomize | 2 | **done (Day 72)** |
 | terraform-state | Terraform State 백업과 잠금 | 3 | **done (Day 26)** |
 | blue-green-canary-rolling | Blue/Green vs Canary vs Rolling | 2 | **done (Day 10)** |
+| container-cpu-limit-throttling | CPU limit과 CFS throttling | 4 | pending |
+| pod-topology-spread | Pod Topology Spread와 AZ 장애 | 3 | pending |
 
 ## G. 관측성 / 안정성
 
@@ -133,6 +145,8 @@
 | chaos-engineering-intro | Chaos Engineering 입문 | 3 | **done (Day 24)** |
 | blameless-postmortem | Postmortem 잘 쓰는 법 | 2 | **done (Day 66)** |
 | error-budget | Error Budget로 배포 속도 결정 | 3 | **done (Day 55)** |
+| cardinality-explosion | 메트릭 카디널리티 폭발 | 3 | **done (Day 97)** |
+| trace-sampling-tradeoff | 트레이스 샘플링 전략의 트레이드오프 | 3 | pending |
 
 ## H. 보안 / 인증
 
@@ -146,18 +160,20 @@
 | csrf-samesite | CSRF와 SameSite 쿠키 | 2 | **done (Day 8)** |
 | secret-management | Secret 관리 (Vault vs SSM) | 2 | **done (Day 76)** |
 | rbac-abac-rebac | RBAC vs ABAC vs ReBAC | 3 | **done (Day 12)** |
+| jwt-key-rotation-jwks | JWT 키 로테이션과 JWKS | 3 | pending |
+| ssrf-metadata-endpoint | SSRF와 클라우드 메타데이터 엔드포인트 | 3 | pending |
 
 ---
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **15 / 15**
-- B. Redis / 캐시: **14 / 14**
-- C. 메시지 큐: **12 / 12**
-- D. 데이터베이스 내부: **15 / 15**
-- E. 네트워크: **10 / 10**
-- F. 클라우드: **12 / 12**
-- G. 관측성: **10 / 10**
-- H. 보안: **8 / 8**
+- A. 분산 시스템 이론: **15 / 17**
+- B. Redis / 캐시: **14 / 16**
+- C. 메시지 큐: **12 / 14**
+- D. 데이터베이스 내부: **15 / 17**
+- E. 네트워크: **10 / 12**
+- F. 클라우드: **12 / 14**
+- G. 관측성: **11 / 12**
+- H. 보안: **8 / 10**
 
-**총 96개. 약 3개월치.**
+**총 112개 (발행 97 / 대기 15).** Day 97에 시드 16개 보충.

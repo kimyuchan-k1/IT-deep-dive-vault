@@ -1463,6 +1463,21 @@
         "rebalance"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "cardinality-explosion",
+      "title": "라벨 하나 추가했다. Prometheus가 OOM으로 죽었고 그동안 알림이 꺼져 있었다",
+      "category": "observability",
+      "date": "2026-09-20",
+      "day": 97,
+      "tags": [
+        "prometheus",
+        "cardinality",
+        "tsdb",
+        "metrics",
+        "relabeling"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3473,6 +3488,26 @@
     {
       "from": "kafka-partition-math",
       "to": "sharding-strategies"
+    },
+    {
+      "from": "cardinality-explosion",
+      "to": "distributed-tracing-otel"
+    },
+    {
+      "from": "cardinality-explosion",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "cardinality-explosion",
+      "to": "observability-stack"
+    },
+    {
+      "from": "cardinality-explosion",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "cardinality-explosion",
+      "to": "structured-logging"
     }
   ]
 }
