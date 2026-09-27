@@ -1478,6 +1478,21 @@
         "relabeling"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "jwt-key-rotation-jwks",
+      "title": "키 하나 갈아끼웠다. 전 서비스가 401을 뱉었고 되돌릴 수도 없었다",
+      "category": "security",
+      "date": "2026-09-27",
+      "day": 98,
+      "tags": [
+        "jwt",
+        "jwks",
+        "key-rotation",
+        "oidc",
+        "rfc7517"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3508,6 +3523,30 @@
     {
       "from": "cardinality-explosion",
       "to": "structured-logging"
+    },
+    {
+      "from": "jwt-key-rotation-jwks",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "jwt-key-rotation-jwks",
+      "to": "jwt-vs-session"
+    },
+    {
+      "from": "jwt-key-rotation-jwks",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "jwt-key-rotation-jwks",
+      "to": "oauth2-grant-types"
+    },
+    {
+      "from": "jwt-key-rotation-jwks",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "jwt-key-rotation-jwks",
+      "to": "secret-management"
     }
   ]
 }
