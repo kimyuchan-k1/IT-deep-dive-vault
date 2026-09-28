@@ -146,7 +146,7 @@
 | blameless-postmortem | Postmortem 잘 쓰는 법 | 2 | **done (Day 66)** |
 | error-budget | Error Budget로 배포 속도 결정 | 3 | **done (Day 55)** |
 | cardinality-explosion | 메트릭 카디널리티 폭발 | 3 | **done (Day 97)** |
-| trace-sampling-tradeoff | 트레이스 샘플링 전략의 트레이드오프 | 3 | pending |
+| trace-sampling-tradeoff | 트레이스 샘플링 전략의 트레이드오프 | 3 | **done (Day 99)** |
 
 ## H. 보안 / 인증
 
@@ -173,7 +173,7 @@
 - D. 데이터베이스 내부: **15 / 17**
 - E. 네트워크: **10 / 12**
 - F. 클라우드: **12 / 14**
-- G. 관측성: **11 / 12**
+- G. 관측성: **12 / 12**
 - H. 보안: **9 / 10**
 
-**총 112개 (발행 98 / 대기 14).** Day 97에 시드 16개 보충.
+**총 112개 (발행 99 / 대기 13).** Day 97에 시드 16개 보충.

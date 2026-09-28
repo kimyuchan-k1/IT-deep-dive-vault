@@ -1493,6 +1493,21 @@
         "rfc7517"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "trace-sampling-tradeoff",
+      "title": "1% 샘플링을 켰다. 장애 30분 동안 에러 트레이스가 한 건도 없었다",
+      "category": "observability",
+      "date": "2026-09-28",
+      "day": 99,
+      "tags": [
+        "tracing",
+        "sampling",
+        "opentelemetry",
+        "tail-sampling",
+        "trace-context"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3547,6 +3562,30 @@
     {
       "from": "jwt-key-rotation-jwks",
       "to": "secret-management"
+    },
+    {
+      "from": "trace-sampling-tradeoff",
+      "to": "cardinality-explosion"
+    },
+    {
+      "from": "trace-sampling-tradeoff",
+      "to": "distributed-tracing-otel"
+    },
+    {
+      "from": "trace-sampling-tradeoff",
+      "to": "error-budget"
+    },
+    {
+      "from": "trace-sampling-tradeoff",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "trace-sampling-tradeoff",
+      "to": "sli-slo-sla"
+    },
+    {
+      "from": "trace-sampling-tradeoff",
+      "to": "structured-logging"
     }
   ]
 }
