@@ -1508,6 +1508,21 @@
         "trace-context"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "consumer-lag-monitoring",
+      "title": "랙 합계는 임계값 아래였다. 파티션 하나가 100분째 멈춰 있었다",
+      "category": "kafka",
+      "date": "2026-09-29",
+      "day": 100,
+      "tags": [
+        "kafka",
+        "consumer-lag",
+        "burrow",
+        "monitoring",
+        "consumer-group"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3586,6 +3601,30 @@
     {
       "from": "trace-sampling-tradeoff",
       "to": "structured-logging"
+    },
+    {
+      "from": "consumer-lag-monitoring",
+      "to": "backpressure-patterns"
+    },
+    {
+      "from": "consumer-lag-monitoring",
+      "to": "dead-letter-queue"
+    },
+    {
+      "from": "consumer-lag-monitoring",
+      "to": "kafka-exactly-once"
+    },
+    {
+      "from": "consumer-lag-monitoring",
+      "to": "kafka-partition-math"
+    },
+    {
+      "from": "consumer-lag-monitoring",
+      "to": "percentile-p99"
+    },
+    {
+      "from": "consumer-lag-monitoring",
+      "to": "sli-slo-sla"
     }
   ]
 }

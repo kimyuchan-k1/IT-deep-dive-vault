@@ -71,7 +71,7 @@
 | sqs-vs-sns-vs-eventbridge | SQS vs SNS vs EventBridge | 2 | **done (Day 17)** |
 | pull-vs-push-model | Pull vs Push 모델 | 2 | **done (Day 19)** |
 | kafka-isr-min-insync | Kafka ISR과 min.insync.replicas | 4 | pending |
-| consumer-lag-monitoring | 컨슈머 랙 측정의 함정 | 3 | pending |
+| consumer-lag-monitoring | 컨슈머 랙 측정의 함정 | 3 | **done (Day 100)** |
 
 ## D. 데이터베이스 내부
 
@@ -169,11 +169,11 @@
 
 - A. 분산 시스템 이론: **15 / 17**
 - B. Redis / 캐시: **14 / 16**
-- C. 메시지 큐: **12 / 14**
+- C. 메시지 큐: **13 / 14**
 - D. 데이터베이스 내부: **15 / 17**
 - E. 네트워크: **10 / 12**
 - F. 클라우드: **12 / 14**
 - G. 관측성: **12 / 12**
 - H. 보안: **9 / 10**
 
-**총 112개 (발행 99 / 대기 13).** Day 97에 시드 16개 보충.
+**총 112개 (발행 100 / 대기 12).** Day 97에 시드 16개 보충.
