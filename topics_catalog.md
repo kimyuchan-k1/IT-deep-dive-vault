@@ -161,7 +161,7 @@
 | secret-management | Secret 관리 (Vault vs SSM) | 2 | **done (Day 76)** |
 | rbac-abac-rebac | RBAC vs ABAC vs ReBAC | 3 | **done (Day 12)** |
 | jwt-key-rotation-jwks | JWT 키 로테이션과 JWKS | 3 | **done (Day 98)** |
-| ssrf-metadata-endpoint | SSRF와 클라우드 메타데이터 엔드포인트 | 3 | pending |
+| ssrf-metadata-endpoint | SSRF와 클라우드 메타데이터 엔드포인트 | 3 | **done (Day 101)** |
 
 ---
 
@@ -174,6 +174,6 @@
 - E. 네트워크: **10 / 12**
 - F. 클라우드: **12 / 14**
 - G. 관측성: **12 / 12**
-- H. 보안: **9 / 10**
+- H. 보안: **10 / 10**
 
-**총 112개 (발행 100 / 대기 12).** Day 97에 시드 16개 보충.
+**총 112개 (발행 101 / 대기 11).** Day 97에 시드 16개 보충.

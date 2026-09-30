@@ -1523,6 +1523,21 @@
         "consumer-group"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "ssrf-metadata-endpoint",
+      "title": "링크 미리보기 기능 하나로 AWS 임시 자격증명이 밖으로 나갔다",
+      "category": "security",
+      "date": "2026-09-30",
+      "day": 101,
+      "tags": [
+        "ssrf",
+        "imds",
+        "aws",
+        "cloud-security",
+        "egress"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3625,6 +3640,30 @@
     {
       "from": "consumer-lag-monitoring",
       "to": "sli-slo-sla"
+    },
+    {
+      "from": "ssrf-metadata-endpoint",
+      "to": "aws-vpc-design"
+    },
+    {
+      "from": "ssrf-metadata-endpoint",
+      "to": "dns-rebinding"
+    },
+    {
+      "from": "ssrf-metadata-endpoint",
+      "to": "mtls-zero-trust"
+    },
+    {
+      "from": "ssrf-metadata-endpoint",
+      "to": "rbac-abac-rebac"
+    },
+    {
+      "from": "ssrf-metadata-endpoint",
+      "to": "secret-management"
+    },
+    {
+      "from": "ssrf-metadata-endpoint",
+      "to": "sqli-prepared-stmt"
     }
   ]
 }
