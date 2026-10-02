@@ -1538,6 +1538,21 @@
         "egress"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "gossip-protocol-antientropy",
+      "title": "지운 데이터가 12일 뒤 되살아났다. 퍼뜨린 건 복구하려고 돌린 repair였다",
+      "category": "distributed",
+      "date": "2026-10-02",
+      "day": 102,
+      "tags": [
+        "gossip",
+        "anti-entropy",
+        "cassandra",
+        "tombstone",
+        "merkle-tree"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -3664,6 +3679,26 @@
     {
       "from": "ssrf-metadata-endpoint",
       "to": "sqli-prepared-stmt"
+    },
+    {
+      "from": "gossip-protocol-antientropy",
+      "to": "consistent-hashing-vnode"
+    },
+    {
+      "from": "gossip-protocol-antientropy",
+      "to": "crdt-intro"
+    },
+    {
+      "from": "gossip-protocol-antientropy",
+      "to": "eventual-vs-strong-consistency"
+    },
+    {
+      "from": "gossip-protocol-antientropy",
+      "to": "lsm-tree-rocksdb"
+    },
+    {
+      "from": "gossip-protocol-antientropy",
+      "to": "quorum-rw-n"
     }
   ]
 }

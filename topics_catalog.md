@@ -30,7 +30,7 @@
 | idempotency-key | Idempotency Key 설계 | 2 | **done (Day 45)** |
 | outbox-pattern | 분산 트랜잭션 — Outbox 패턴 | 3 | **done (Day 56)** |
 | cdc-debezium | CDC와 Debezium | 3 | **done (Day 11)** |
-| gossip-protocol-antientropy | Gossip 프로토콜과 anti-entropy 확산 | 4 | pending |
+| gossip-protocol-antientropy | Gossip 프로토콜과 anti-entropy 확산 | 4 | **done (Day 102)** |
 | consistent-hashing-vnode | Consistent Hashing과 가상 노드 | 3 | pending |
 
 ## B. Redis / 캐시
@@ -167,7 +167,7 @@
 
 ## 카테고리별 진행 현황 (자동 갱신 예정)
 
-- A. 분산 시스템 이론: **15 / 17**
+- A. 분산 시스템 이론: **16 / 17**
 - B. Redis / 캐시: **14 / 16**
 - C. 메시지 큐: **13 / 14**
 - D. 데이터베이스 내부: **15 / 17**
