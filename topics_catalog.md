@@ -93,7 +93,7 @@
 | materialized-view | Materialized View vs 캐시 테이블 | 2 | **done (Day 9)** |
 | hyperloglog-approx-counting | 어림 카운팅 (HyperLogLog) | 3 | **done (Day 38)** |
 | query-planner-statistics | 옵티마이저 통계가 틀리면 벌어지는 일 | 4 | pending |
-| deadlock-detection | 데드락 탐지와 락 획득 순서 | 3 | pending |
+| deadlock-detection | 데드락 탐지와 락 획득 순서 | 3 | **done (Day 103)** |
 
 ## E. 네트워크 / 프로토콜
 
@@ -170,10 +170,10 @@
 - A. 분산 시스템 이론: **16 / 17**
 - B. Redis / 캐시: **14 / 16**
 - C. 메시지 큐: **13 / 14**
-- D. 데이터베이스 내부: **15 / 17**
+- D. 데이터베이스 내부: **16 / 17**
 - E. 네트워크: **10 / 12**
 - F. 클라우드: **12 / 14**
 - G. 관측성: **12 / 12**
 - H. 보안: **10 / 10**
 
-**총 112개 (발행 101 / 대기 11).** Day 97에 시드 16개 보충.
+**총 112개 (발행 103 / 대기 9).** Day 97에 시드 16개 보충.

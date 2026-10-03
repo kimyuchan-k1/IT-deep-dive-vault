@@ -1553,6 +1553,21 @@
         "merkle-tree"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "deadlock-detection",
+      "title": "락 순서를 맞췄는데 데드락이 났다. 서로를 막은 건 존재하지도 않는 행이었다",
+      "category": "db",
+      "date": "2026-10-03",
+      "day": 103,
+      "tags": [
+        "deadlock",
+        "innodb",
+        "gap-lock",
+        "lock-ordering",
+        "postgresql"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3699,6 +3714,26 @@
     {
       "from": "gossip-protocol-antientropy",
       "to": "quorum-rw-n"
+    },
+    {
+      "from": "deadlock-detection",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "deadlock-detection",
+      "to": "mvcc-how"
+    },
+    {
+      "from": "deadlock-detection",
+      "to": "phantom-read-isolation"
+    },
+    {
+      "from": "deadlock-detection",
+      "to": "retry-exponential-backoff-jitter"
+    },
+    {
+      "from": "deadlock-detection",
+      "to": "upsert-idempotency"
     }
   ]
 }
