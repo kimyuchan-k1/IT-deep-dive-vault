@@ -109,7 +109,7 @@
 | reverse-proxy-l4-l7 | Reverse Proxy와 L4/L7 LB | 2 | **done (Day 34)** |
 | http-idempotency | Idempotency를 위한 HTTP 메서드 설계 | 2 | **done (Day 81)** |
 | sse-prod-ops | Server-Sent Events 실전 운영 | 3 | **done (Day 71)** |
-| nagle-delayed-ack | Nagle 알고리즘과 Delayed ACK 충돌 | 4 | pending |
+| nagle-delayed-ack | Nagle 알고리즘과 Delayed ACK 충돌 | 4 | **done (Day 104)** |
 | keepalive-timeout-mismatch | Keep-Alive 타임아웃 불일치와 502 | 3 | pending |
 
 ## F. 클라우드 / 인프라
@@ -171,9 +171,9 @@
 - B. Redis / 캐시: **14 / 16**
 - C. 메시지 큐: **13 / 14**
 - D. 데이터베이스 내부: **16 / 17**
-- E. 네트워크: **10 / 12**
+- E. 네트워크: **11 / 12**
 - F. 클라우드: **12 / 14**
 - G. 관측성: **12 / 12**
 - H. 보안: **10 / 10**
 
-**총 112개 (발행 103 / 대기 9).** Day 97에 시드 16개 보충.
+**총 112개 (발행 104 / 대기 8).** Day 97에 시드 16개 보충.

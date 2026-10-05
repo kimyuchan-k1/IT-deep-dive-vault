@@ -1568,6 +1568,21 @@
         "postgresql"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "nagle-delayed-ack",
+      "title": "요청마다 정확히 40ms씩 늦었다. 범인은 write() 두 번과 서로를 기다린 두 알고리즘이었다",
+      "category": "network",
+      "date": "2026-10-05",
+      "day": 104,
+      "tags": [
+        "tcp",
+        "nagle",
+        "delayed-ack",
+        "tcp-nodelay",
+        "latency"
+      ],
+      "difficulty": 4
     }
   ],
   "edges": [
@@ -3734,6 +3749,26 @@
     {
       "from": "deadlock-detection",
       "to": "upsert-idempotency"
+    },
+    {
+      "from": "nagle-delayed-ack",
+      "to": "connection-pool-sizing"
+    },
+    {
+      "from": "nagle-delayed-ack",
+      "to": "grpc-vs-rest"
+    },
+    {
+      "from": "nagle-delayed-ack",
+      "to": "keepalive-timeout-mismatch"
+    },
+    {
+      "from": "nagle-delayed-ack",
+      "to": "redis-pipelining-vs-tx"
+    },
+    {
+      "from": "nagle-delayed-ack",
+      "to": "tcp-slow-start"
     }
   ]
 }
