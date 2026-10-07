@@ -1583,6 +1583,21 @@
         "latency"
       ],
       "difficulty": 4
+    },
+    {
+      "slug": "consistent-hashing-vnode",
+      "title": "캐시 노드 1대가 죽자 바로 옆 노드도 죽었다. 해시 링이 균등하다는 건 가상 노드가 있을 때 얘기였다",
+      "category": "distributed",
+      "date": "2026-10-07",
+      "day": 105,
+      "tags": [
+        "consistent-hashing",
+        "virtual-node",
+        "sharding",
+        "memcached",
+        "cassandra"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3769,6 +3784,30 @@
     {
       "from": "nagle-delayed-ack",
       "to": "tcp-slow-start"
+    },
+    {
+      "from": "consistent-hashing-vnode",
+      "to": "cache-stampede"
+    },
+    {
+      "from": "consistent-hashing-vnode",
+      "to": "gossip-protocol-antientropy"
+    },
+    {
+      "from": "consistent-hashing-vnode",
+      "to": "quorum-rw-n"
+    },
+    {
+      "from": "consistent-hashing-vnode",
+      "to": "redis-cluster-slot"
+    },
+    {
+      "from": "consistent-hashing-vnode",
+      "to": "redis-hotkey"
+    },
+    {
+      "from": "consistent-hashing-vnode",
+      "to": "sharding-strategies"
     }
   ]
 }
