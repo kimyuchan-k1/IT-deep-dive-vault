@@ -129,7 +129,7 @@
 | terraform-state | Terraform State 백업과 잠금 | 3 | **done (Day 26)** |
 | blue-green-canary-rolling | Blue/Green vs Canary vs Rolling | 2 | **done (Day 10)** |
 | container-cpu-limit-throttling | CPU limit과 CFS throttling | 4 | pending |
-| pod-topology-spread | Pod Topology Spread와 AZ 장애 | 3 | pending |
+| pod-topology-spread | Pod Topology Spread와 AZ 장애 | 3 | **done (Day 106)** |
 
 ## G. 관측성 / 안정성
 
@@ -172,8 +172,8 @@
 - C. 메시지 큐: **13 / 14**
 - D. 데이터베이스 내부: **16 / 17**
 - E. 네트워크: **11 / 12**
-- F. 클라우드: **12 / 14**
+- F. 클라우드: **13 / 14**
 - G. 관측성: **12 / 12**
 - H. 보안: **10 / 10**
 
-**총 112개 (발행 105 / 대기 7).** Day 97에 시드 16개 보충.
+**총 112개 (발행 106 / 대기 6).** Day 97에 시드 16개 보충.

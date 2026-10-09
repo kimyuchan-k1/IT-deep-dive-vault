@@ -1598,6 +1598,21 @@
         "cassandra"
       ],
       "difficulty": 3
+    },
+    {
+      "slug": "pod-topology-spread",
+      "title": "maxSkew 1을 걸었는데 AZ 하나 장애로 파드 절반이 죽었다. 노드 없는 AZ는 계산에 없었다",
+      "category": "cloud",
+      "date": "2026-10-09",
+      "day": 106,
+      "tags": [
+        "kubernetes",
+        "topology-spread",
+        "availability-zone",
+        "scheduler",
+        "cluster-autoscaler"
+      ],
+      "difficulty": 3
     }
   ],
   "edges": [
@@ -3808,6 +3823,30 @@
     {
       "from": "consistent-hashing-vnode",
       "to": "sharding-strategies"
+    },
+    {
+      "from": "pod-topology-spread",
+      "to": "aws-vpc-design"
+    },
+    {
+      "from": "pod-topology-spread",
+      "to": "bulkhead-pattern"
+    },
+    {
+      "from": "pod-topology-spread",
+      "to": "chaos-engineering-intro"
+    },
+    {
+      "from": "pod-topology-spread",
+      "to": "hpa-internals"
+    },
+    {
+      "from": "pod-topology-spread",
+      "to": "k8s-pod-death-5-reasons"
+    },
+    {
+      "from": "pod-topology-spread",
+      "to": "spot-instance-safe"
     }
   ]
 }
